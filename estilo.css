@@ -259,6 +259,11 @@ main {
    grid-template-areas:
    "mapa formulario"  
 }
+
+.divContenedor__contacto--article--div:hover {
+    transform: scale(110%, 110%);
+    transition: 2s;
+}
    
 .gridItem__1 {
    grid-area: mapa;
@@ -272,18 +277,76 @@ main {
 .gridItem2 {
     grid-area: formulario;
     margin: 15px;
-    border: none;
+    border: none;  
 }
  .gridItem__2--form {
     display: flex;
     flex-direction: column;
+    align-items: center;   
+ }
+ .gridItem__2--form legend {
+     font-size: 40px;
+     font-family: 'Zen Loop', cursive;
+     color: #ffff;     
+ }
+ .gridItem__2--form label {
+    font-size: 20px;
+    font-family: 'Zen Loop', cursive;
+    color: #ffff;   
+ }
+ .gridItem__2--form select{
+    margin: 1px;
+    padding: 5px;
+    font-size: 15px;
+    font-family: 'Zen Loop', cursive;
+    color: #24261a; 
+    background: linear-gradient(to bottom, #c4bcbb, #E4E4D9);
+    width: 450px;
+    text-align: center;
+    border: none;
+ }
+ .gridItem__2--form label input{
+     width: 430px;
+     padding: 3px;
+     margin: 1px 0px;
+     border: none;
+     border-bottom: solid 2px #E4E4D9;
+     background: transparent;
+     font-family: 'Zen Loop', cursive;
+     font-size: 18px;
+     color: #ffff;
+     font-weight: bold;  
+ }
+ .gridItem__2--form label input:focus {
+    background: linear-gradient(to bottom, transparent,#878a7b);
+    outline: none;
+ }
+ .gridItem__2--form label textarea{
+     width: 430px;
+     border: none;
+     border-bottom: solid 2px #E4E4D9;
+     background: transparent;
+     font-family: 'Zen Loop', cursive;
+     font-size: 18px;
+     color: #ffff;
+     font-weight: bold;
+     resize: none;
+ }
+ .gridItem__2--form label textarea:focus {
+    background: linear-gradient(to bottom, transparent,#878a7b);
+    outline: none;
  }
 
-
-
-
-
-
+ .boton {
+    width: 430px;
+    background: linear-gradient(to bottom, #c4bcbb, #E4E4D9);
+    font-size: 15px;
+    font-family: 'Zen Loop', cursive;
+    border: none;
+ }
+ .boton:focus {
+     border:solid 2px #E4E4D9 ;
+ }
 
 
 

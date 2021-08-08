@@ -32,38 +32,28 @@
             </ul>
         </nav>
     </header>
-    <div class="divContacto">
-        <h2 class="divContacto__title">Contacto</h2>
-        <article>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3405.097895030957!2d-64.1602523842762!3d-31.41142880315642!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a3debb3bc1bb%3A0xb5510f94363ace6c!2sMotor%20Detail!5e0!3m2!1ses-419!2sar!4v1625525748654!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        </article>
-        <aside>             
-            <form class="form1">
-               <fieldset>
-                   <legend>Contactanos</legend>
-                   <label for="Provincia">¿De donde sos?</label><br>
+    <div class="divContenedor__contacto--article--div">
+        <iframe class="gridItem__1" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3405.094223033764!2d-64.15792248425377!3d-31.41152998057196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a3debb3bc1bb%3A0xb5510f94363ace6c!2sMotor%20Detail!5e0!3m2!1ses-419!2sar!4v1628205616435!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>                                         
+        <fieldset class="gridItem2">
+            <form class="gridItem__2--form">
+                <legend>Contactanos</legend>
+                <label for="Provincia">¿De donde sos?</label>
                     <select name="Provincia" id="">
                         <option value="CABA">Ciudad Autonoma de Buenos Aires</option>
                         <option value="CBA">Ciudad de Córdoba</option>
                         <option value="Santa fé">Rosario de Santa fe</option>
-                    </select><br>
-                    <label for="Nombre">Nombre</label><br>
-                        <input type="text" name="Nombre" placeholder="Juan" required><br>
-                    <label for="Apellido">Apellido</label><br>
-                        <input type="text" name="Apellido" placeholder="Romero" required><br> 
-                    <label for="Teléfono">Teléfono</label><br>
-                        <input type="number" name="Teléfono" placeholder="3517583514" required><br> 
-                    <label for="Correo">E-mail</label><br>
-                        <input type="email" name="Correo" placeholder="ejemplo@gmail.com" required><br>
-                    <label for="Comentarios">Comentarios</label><br>
-                        <textarea name="Comentarios" placeholder="Deja tu comentario" rows="10px" cols="25px"></textarea><br>
-                    <label for="acepta">Deseo recibir ofertas a mi casilla de correo electronico</label>    
-                        <input type="checkbox" name="acepta" value="Si"><br>        
-                    <input type="submit" value="Enviar">
-                    <input type="reset" value="Limpiar">
-               </fieldset>
+                     </select>
+                <label for="Nombre"><input type="text" name="Nombre" placeholder="Tu nombre" required></label>         
+                <label for="Teléfono"><input type="text" name="Teléfono" placeholder="Telefono de contacto" required></label> 
+                <label for="Correo"><input type="email" name="Correo" placeholder="Correo electronico" required></label>
+                <label for="Comentarios"><textarea name="Comentarios" placeholder="Dejanos tu comentario" rows="10px" cols="25px"></textarea></label>                               
+                <div>
+                    <label for="acepta">Deseo recibir ofertas a mi casilla de correo electronico</label>
+                    <input type="checkbox" name="acepta" value="Si">
+                </div>                               
+                <input type="submit" value="Enviar" class="boton">   
             </form>
-        </aside>
+        </fieldset>                 
     </div>
     <footer class="pie">
         <div class="pieDiv__img">
