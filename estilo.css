@@ -174,6 +174,7 @@ main {
     grid-area: asidem;
     background-image: url(./imagenes/macetas.png);
     background-size: cover;
+    background-position: right;
     box-sizing: border-box;
     border-bottom: solid 1px #4B5035;
 }
@@ -218,28 +219,6 @@ main {
 .divContenedor__contacto--article {
     grid-area: articlec;
     height: 650px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.divContenedor__contacto--article{
-    grid-area: articlec;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -250,19 +229,19 @@ main {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
-    height: 80%;
+    height: 85%;
     box-sizing: border-box;
     border: solid 5px #ffff;
     background-color: #b0b3a3;
     display: grid;
-   grid-template-columns: repeat(2, 50% 50%);
+   grid-template-columns: repeat(2, 50%);
    grid-template-areas:
    "mapa formulario"  
 }
 
 .divContenedor__contacto--article--div:hover {
     transform: scale(110%, 110%);
-    transition: 2s;
+    transition: 2.3s;
 }
    
 .gridItem__1 {
@@ -271,13 +250,17 @@ main {
    justify-self: center;
    margin: 15px;
    width: 95%;
-   height: 95%;
+   height: 90%;
 }
 
 .gridItem2 {
     grid-area: formulario;
+    align-self: center;
+    justify-self: center;
     margin: 15px;
-    border: none;  
+    width: 95%;
+    height: 90%;
+    border: none; 
 }
  .gridItem__2--form {
     display: flex;
@@ -292,23 +275,24 @@ main {
  .gridItem__2--form label {
     font-size: 20px;
     font-family: 'Zen Loop', cursive;
-    color: #ffff;   
+    color: #ffff; 
  }
  .gridItem__2--form select{
     margin: 1px;
-    padding: 5px;
+    padding: 7px;
     font-size: 15px;
+    text-align: center;
     font-family: 'Zen Loop', cursive;
     color: #24261a; 
     background: linear-gradient(to bottom, #c4bcbb, #E4E4D9);
-    width: 450px;
-    text-align: center;
+    width: 85%;
+   
     border: none;
  }
- .gridItem__2--form label input{
-     width: 430px;
+ .gridItem__2--form input{
+     width: 85%;
      padding: 3px;
-     margin: 1px 0px;
+     margin-top: 10px ;
      border: none;
      border-bottom: solid 2px #E4E4D9;
      background: transparent;
@@ -317,12 +301,12 @@ main {
      color: #ffff;
      font-weight: bold;  
  }
- .gridItem__2--form label input:focus {
+ .gridItem__2--form input:focus {
     background: linear-gradient(to bottom, transparent,#878a7b);
     outline: none;
  }
- .gridItem__2--form label textarea{
-     width: 430px;
+ .gridItem__2--form textarea{
+     width: 85%;
      border: none;
      border-bottom: solid 2px #E4E4D9;
      background: transparent;
@@ -332,13 +316,12 @@ main {
      font-weight: bold;
      resize: none;
  }
- .gridItem__2--form label textarea:focus {
+ .gridItem__2--form textarea:focus {
     background: linear-gradient(to bottom, transparent,#878a7b);
     outline: none;
  }
-
  .boton {
-    width: 430px;
+    width: 45%;
     background: linear-gradient(to bottom, #c4bcbb, #E4E4D9);
     font-size: 15px;
     font-family: 'Zen Loop', cursive;
@@ -350,17 +333,145 @@ main {
 
 
 
+ /* Seccion NOSOTROS */
+ 
+ 
+.NosotrosGrid {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    background: linear-gradient(to bottom, #c4bcbb, #E4E4D9);
+    display: grid;
+    grid-template-columns: repeat(2, 50% 50%);
+    grid-template-rows: 300px 300px 300px 500px 500px;
+   grid-template-areas: 
+   "aside article"
+   "aside article" 
+   "aside article"  
+   "divimg divimg" 
+   "divm divm";
+}
+
+.NosotrosGrid__asideMacetas {
+    grid-area: aside;
+    background: url(./imagenes/MacetasNosotros.png);
+    background-size: cover;
+    background-position: bottom;
+    box-sizing: border-box;
+    border-bottom: solid 1px #4B5035;
+    border-top: solid 1px #4B5035;
+}
+
+.NosotrosGrid__article {
+    grid-area: article;
+    border-bottom: solid 1px #4B5035;
+    border-top: solid 1px #4B5035;
+    background: linear-gradient(to bottom, #c4bcbb, #E4E4D9);
+    text-align: center;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+}
+
+.NosotrosGrid__article h1 {
+    color: #4B5035;
+    font-family: 'Great Vibes', cursive;
+    font-size: 60px;
+    padding: 10px;
+    margin: 50px;
+}
+
+.NosotrosGrid__article p {
+    font-family: 'Zen Loop', cursive;
+    font-weight: bold;
+    color: #4B5035;
+    font-size: 40px;
+    margin: 50px;
+}
+
+.NosotrosGrid__divVelas {
+    grid-area: divimg;
+    background-image: url(./imagenes/VelasNosotros.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    border-bottom: solid 1px #4B5035;
+}
+
+.NosotrosGrid__divProductos {
+    grid-area: divm;
+    display: grid;
+    grid-template-columns: repeat(2, 50% 50%); 
+    grid-template-areas: 
+    "gridDivMacetas gridDivVelas"
+}
+
+.NosotrosGrid__divProductos--macetas {
+    grid-area: gridDivMacetas; 
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.NosotrosGrid__divProductos--macetas div {
+    background-image: url(./imagenes/MacetasNosotros__div.png);
+    background-size: cover;
+    background-position: center;
+    border: solid 1px #4B5035;
+    width: 85%;
+    height: 60%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.NosotrosGrid__divProductos--macetas h2 {
+    font-family: 'Zen Loop', cursive;
+    font-weight: bold;
+    color: #4B5035;
+    font-size: 30px;
+}
+
+.NosotrosGrid__divProductos--macetas a {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #4B5035;
+    font-size: 15px;
+    padding: 10px;
+}
+
+.NosotrosGrid__divProductos--velas {
+    grid-area: gridDivVelas;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.NosotrosGrid__divProductos--velas h2 {
+    font-family: 'Zen Loop', cursive;
+    font-weight: bold;
+    color: #4B5035;
+    font-size: 30px;
+}
+.NosotrosGrid__divProductos--velas a {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #4B5035;
+    font-size: 15px;
+    padding: 10px;
+}
+
+.NosotrosGrid__divProductos--velas div {
+    background-image: url(./imagenes/VelasNosotros__div.png);
+    background-size: cover;
+    background-position: center;
+    border: solid 1px #4B5035;
+    width: 85%;
+    height: 60%;
+    margin-right: auto;
+    margin-left: auto;   
+}
 
 
 
-
-
-
-
-
-
-
-
+/* SECCION MACETAS */ 
 
 
 
@@ -496,4 +607,5 @@ main {
     display: flex;
     flex-direction: row;  
 }
+
 
