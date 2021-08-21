@@ -473,14 +473,25 @@ main {
 
 /* SECCION MACETAS */ 
 
+.divMacetas__sección--title {
+   
+    width: 100%;
+    height: auto;
+    border-top: solid 1px #4B5035;
+}
+
+
 .divMacetas__title {
     text-align: center;
     color: #4B5035;
-    font-family: 'Great Vibes', cursive;
+    font-family: 'Zen Loop', cursive;
     font-size: 60px;
     font-weight: bold;
     padding: 10px;
-    
+    margin: 10px; 
+}
+.container {
+    width: 80%;
 }
 
 .col-md-4 {
