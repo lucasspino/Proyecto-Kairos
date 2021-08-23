@@ -9,43 +9,38 @@ html body {
   box-sizing: content-box;
   margin: auto;
   padding: 0px;
-  background: linear-gradient(to bottom, #E4E4D9, #c4bcbb);
+  background: linear-gradient(to bottom, #E4E4D9, #C4BCBB);
   width: 100%;
   height: 7rem;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap; }
+  .navContenedor__logo {
+    margin-top: 0%;
+    margin-left: 0%;
+    width: 5rem;
+    height: 5rem; }
+  .navContenedor__lista {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+    color: #4B5035; }
+    .navContenedor__lista--item {
+      margin: 10px;
+      align-items: center; }
+      .navContenedor__lista--item i {
+        margin-right: 10px;
+        font-size: 25px; }
+      .navContenedor__lista--item a {
+        text-decoration: none;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 24px;
+        padding-right: 10px;
+        color: #4B5035; }
 
-.navContenedor__logo {
-  margin-top: 0%;
-  margin-left: 0%;
-  width: 5rem;
-  height: 5rem; }
-
-.navContenedor__lista {
-  list-style-type: none;
-  display: flex;
-  flex-direction: row;
-  padding: 15px;
-  color: #4B5035; }
-
-.navContenedor__lista--item {
-  margin: 10px;
-  align-items: center; }
-
-.navContenedor__lista i {
-  margin-right: 10px;
-  font-size: 25px; }
-
-.navContenedor__lista--item a {
-  text-decoration: none;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 24px;
-  padding-right: 10px;
-  color: #4B5035; }
-
-/* Titulo */
+/* Presentación */
 .divPrincipal {
   width: 80%;
   height: 650px;
@@ -62,22 +57,18 @@ html body {
   flex-direction: column;
   justify-content: center;
   align-items: center; }
-
-.divPrincipal div {
-  text-align: center; }
-
-.divPrincipal__title {
-  color: #E4E4D9;
-  font-family: 'Great Vibes', cursive;
-  font-size: 60px; }
-
-.divPrincipal div a {
-  text-decoration: none; }
-
-.nosotros__parrafo {
-  font-family: 'Zen Loop', cursive;
-  font-size: 30px;
-  color: #E4E4D9; }
+  .divPrincipal div {
+    text-align: center; }
+    .divPrincipal div a {
+      text-decoration: none; }
+    .divPrincipal div .divPrincipal__title {
+      color: #E4E4D9;
+      font-family: 'Great Vibes', cursive;
+      font-size: 60px; }
+    .divPrincipal div .nosotros__parrafo {
+      font-family: 'Zen Loop', cursive;
+      font-size: 30px;
+      color: #E4E4D9; }
 
 /*main*/
 main {
@@ -85,200 +76,172 @@ main {
   margin-left: auto;
   margin-right: auto;
   background: linear-gradient(to bottom, #c4bcbb, #E4E4D9); }
-
-.divContenedor {
-  display: grid;
-  grid-template-columns: repeat(2, 50% 50%);
-  grid-template-rows: repeat(3, 650px);
-  grid-template-areas: "articlev asidev"  "articlem asidem"  "articlec articlec"; }
-
-.divContenedor__velas--article {
-  grid-area: articlev;
-  height: 650px;
-  background-image: url(../imagenes/velasindex.png);
-  background-size: cover;
-  box-sizing: border-box;
-  border-bottom: solid 1px #4B5035; }
-
-.divContenedor__velas--aside {
-  grid-area: asidev;
-  height: 650px;
-  background: linear-gradient(to bottom, #c4bcbb, #E4E4D9);
-  text-align: center;
-  box-sizing: border-box;
-  border-bottom: solid 1px #4B5035;
-  display: flex;
-  align-items: center;
-  justify-content: center; }
-
-.divContenedor__velas--aside h2 {
-  color: #4B5035;
-  font-family: 'Great Vibes', cursive;
-  font-size: 60px; }
-
-.divContenedor__velas--aside p {
-  font-family: 'Zen Loop', cursive;
-  font-weight: bold;
-  color: #4B5035;
-  font-size: 40px; }
-
-.divContenedor__velas--aside a {
-  font-family: Arial, Helvetica, sans-serif;
-  color: #4B5035;
-  font-size: 30px; }
-
-.divContenedor__velas--aside div {
-  align-items: start;
-  box-sizing: border-box;
-  margin: 50px; }
-
-.divContenedor__macetas--article {
-  grid-area: asidem;
-  background-image: url(../imagenes/macetas.png);
-  background-size: cover;
-  background-position: right;
-  box-sizing: border-box;
-  border-bottom: solid 1px #4B5035; }
-
-.divContenedor__macetas--aside {
-  grid-area: articlem;
-  height: 650px;
-  background: linear-gradient(to bottom, #E4E4D9, #c4bcbb);
-  box-sizing: border-box;
-  border-bottom: solid 1px #4B5035;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center; }
-
-.divContenedor__macetas--aside div {
-  align-items: start;
-  box-sizing: border-box;
-  margin: 50px; }
-
-.divContenedor__macetas--aside div h2 {
-  color: #4B5035;
-  font-family: 'Great Vibes', cursive;
-  font-size: 60px; }
-
-.divContenedor__macetas--aside div p {
-  font-family: 'Zen Loop', cursive;
-  font-weight: bold;
-  color: #4B5035;
-  font-size: 40px; }
-
-.divContenedor__macetas--aside div a {
-  font-family: Arial, Helvetica, sans-serif;
-  color: #4B5035;
-  font-size: 30px; }
-
-.divContenedor__contacto--article {
-  grid-area: articlec;
-  height: 650px;
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  background: linear-gradient(to bottom, #c4bcbb, #E4E4D9); }
-
-.divContenedor__contacto--article--div {
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-  height: 85%;
-  box-sizing: border-box;
-  border: solid 5px #ffff;
-  background-color: #b0b3a3;
-  display: grid;
-  grid-template-columns: repeat(2, 50%);
-  grid-template-areas: "mapa formulario"; }
-
-.divContenedor__contacto--article--div:hover {
-  transform: scale(110%, 110%);
-  transition: 2.3s; }
-
-.gridItem__1 {
-  grid-area: mapa;
-  align-self: center;
-  justify-self: center;
-  margin: 15px;
-  width: 95%;
-  height: 90%; }
-
-.gridItem2 {
-  grid-area: formulario;
-  align-self: center;
-  justify-self: center;
-  margin: 15px;
-  width: 95%;
-  height: 90%;
-  border: none; }
-
-.gridItem__2--form {
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-
-.gridItem__2--form legend {
-  font-size: 40px;
-  font-family: 'Zen Loop', cursive;
-  color: #ffff; }
-
-.gridItem__2--form label {
-  font-size: 20px;
-  font-family: 'Zen Loop', cursive;
-  color: #ffff; }
-
-.gridItem__2--form select {
-  margin: 1px;
-  padding: 7px;
-  font-size: 15px;
-  text-align: center;
-  font-family: 'Zen Loop', cursive;
-  color: #24261a;
-  background: linear-gradient(to bottom, #c4bcbb, #E4E4D9);
-  width: 85%;
-  border: none; }
-
-.gridItem__2--form input {
-  width: 85%;
-  padding: 3px;
-  margin-top: 10px;
-  border: none;
-  border-bottom: solid 2px #E4E4D9;
-  background: transparent;
-  font-family: 'Zen Loop', cursive;
-  font-size: 18px;
-  color: #ffff;
-  font-weight: bold; }
-
-.gridItem__2--form input:focus {
-  background: linear-gradient(to bottom, transparent, #878a7b);
-  outline: none; }
-
-.gridItem__2--form textarea {
-  width: 85%;
-  border: none;
-  border-bottom: solid 2px #E4E4D9;
-  background: transparent;
-  font-family: 'Zen Loop', cursive;
-  font-size: 18px;
-  color: #ffff;
-  font-weight: bold;
-  resize: none; }
-
-.gridItem__2--form textarea:focus {
-  background: linear-gradient(to bottom, transparent, #878a7b);
-  outline: none; }
-
-.boton {
-  width: 45%;
-  background: linear-gradient(to bottom, #c4bcbb, #E4E4D9);
-  font-size: 15px;
-  font-family: 'Zen Loop', cursive;
-  border: none; }
-
-.boton:focus {
-  border: solid 2px #E4E4D9; }
+  main .divContenedor {
+    display: grid;
+    grid-template-columns: repeat(2, 50% 50%);
+    grid-template-rows: repeat(3, 650px);
+    grid-template-areas: "articlev asidev"  "articlem asidem"  "articlec articlec"; }
+    main .divContenedor__velas--article {
+      grid-area: articlev;
+      height: 650px;
+      background-image: url(../imagenes/velasindex.png);
+      background-size: cover;
+      box-sizing: border-box;
+      border-bottom: solid 1px #4B5035; }
+    main .divContenedor__velas--aside {
+      grid-area: asidev;
+      height: 650px;
+      background: linear-gradient(to bottom, #c4bcbb, #E4E4D9);
+      text-align: center;
+      box-sizing: border-box;
+      border-bottom: solid 1px #4B5035;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      main .divContenedor__velas--aside div {
+        align-items: start;
+        box-sizing: border-box;
+        margin: 50px; }
+        main .divContenedor__velas--aside div h2 {
+          color: #4B5035;
+          font-family: 'Great Vibes', cursive;
+          font-size: 60px; }
+        main .divContenedor__velas--aside div p {
+          font-family: 'Zen Loop', cursive;
+          font-weight: bold;
+          color: #4B5035;
+          font-size: 40px; }
+        main .divContenedor__velas--aside div a {
+          font-family: Arial, Helvetica, sans-serif;
+          color: #4B5035;
+          font-size: 30px; }
+    main .divContenedor__macetas--article {
+      grid-area: asidem;
+      background-image: url(../imagenes/macetas.png);
+      background-size: cover;
+      background-position: right;
+      box-sizing: border-box;
+      border-bottom: solid 1px #4B5035; }
+    main .divContenedor__macetas--aside {
+      grid-area: articlem;
+      height: 650px;
+      background: linear-gradient(to bottom, #E4E4D9, #c4bcbb);
+      box-sizing: border-box;
+      border-bottom: solid 1px #4B5035;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      main .divContenedor__macetas--aside div {
+        align-items: start;
+        box-sizing: border-box;
+        margin: 50px; }
+        main .divContenedor__macetas--aside div h2 {
+          color: #4B5035;
+          font-family: 'Great Vibes', cursive;
+          font-size: 60px; }
+        main .divContenedor__macetas--aside div p {
+          font-family: 'Zen Loop', cursive;
+          font-weight: bold;
+          color: #4B5035;
+          font-size: 40px; }
+        main .divContenedor__macetas--aside div a {
+          font-family: Arial, Helvetica, sans-serif;
+          color: #4B5035;
+          font-size: 30px; }
+    main .divContenedor__contacto--article {
+      grid-area: articlec;
+      height: 650px;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      background: linear-gradient(to bottom, #c4bcbb, #E4E4D9); }
+      main .divContenedor__contacto--article--div {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        height: 85%;
+        box-sizing: border-box;
+        border: solid 5px #ffff;
+        background-color: #b0b3a3;
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        grid-template-areas: "mapa formulario"; }
+      main .divContenedor__contacto--article--div:hover {
+        transform: scale(110%, 110%);
+        transition: 2.3s; }
+      main .divContenedor__contacto--article .gridItem__1 {
+        grid-area: mapa;
+        align-self: center;
+        justify-self: center;
+        margin: 15px;
+        width: 95%;
+        height: 90%; }
+      main .divContenedor__contacto--article .gridItem2 {
+        grid-area: formulario;
+        align-self: center;
+        justify-self: center;
+        margin: 15px;
+        width: 95%;
+        height: 90%;
+        border: none; }
+        main .divContenedor__contacto--article .gridItem2 .gridItem__2--form {
+          display: flex;
+          flex-direction: column;
+          align-items: center; }
+          main .divContenedor__contacto--article .gridItem2 .gridItem__2--form legend {
+            font-size: 40px;
+            font-family: 'Zen Loop', cursive;
+            color: #ffff; }
+          main .divContenedor__contacto--article .gridItem2 .gridItem__2--form label {
+            font-size: 20px;
+            font-family: 'Zen Loop', cursive;
+            color: #ffff; }
+          main .divContenedor__contacto--article .gridItem2 .gridItem__2--form select {
+            margin: 1px;
+            padding: 7px;
+            font-size: 15px;
+            text-align: center;
+            font-family: 'Zen Loop', cursive;
+            color: #24261a;
+            background: linear-gradient(to bottom, #c4bcbb, #E4E4D9);
+            width: 85%;
+            border: none; }
+          main .divContenedor__contacto--article .gridItem2 .gridItem__2--form input {
+            width: 85%;
+            padding: 3px;
+            margin-top: 10px;
+            border: none;
+            border-bottom: solid 2px #E4E4D9;
+            background: transparent;
+            font-family: 'Zen Loop', cursive;
+            font-size: 18px;
+            color: #ffff;
+            font-weight: bold; }
+          main .divContenedor__contacto--article .gridItem2 .gridItem__2--form input:focus {
+            background: linear-gradient(to bottom, transparent, #878a7b);
+            outline: none; }
+          main .divContenedor__contacto--article .gridItem2 .gridItem__2--form textarea {
+            width: 85%;
+            border: none;
+            border-bottom: solid 2px #E4E4D9;
+            background: transparent;
+            font-family: 'Zen Loop', cursive;
+            font-size: 18px;
+            color: #ffff;
+            font-weight: bold;
+            resize: none; }
+          main .divContenedor__contacto--article .gridItem2 .gridItem__2--form textarea:focus {
+            background: linear-gradient(to bottom, transparent, #878a7b);
+            outline: none; }
+          main .divContenedor__contacto--article .gridItem2 .gridItem__2--form .boton {
+            width: 85%;
+            background: linear-gradient(to bottom, #c4bcbb, #E4E4D9);
+            font-size: 15px;
+            font-family: 'Zen Loop', cursive;
+            border: none; }
+          main .divContenedor__contacto--article .gridItem2 .gridItem__2--form .boton:focus {
+            border: solid 2px #E4E4D9; }
 
 /* Seccion NOSOTROS */
 .NosotrosGrid {
