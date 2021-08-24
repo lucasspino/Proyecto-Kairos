@@ -1,9 +1,10 @@
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/estilo.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,116 +18,142 @@
     <script src="https://kit.fontawesome.com/686969e7fb.js" crossorigin="anonymous"></script>
     <title>Kairos Deco</title>
 </head>
-    </head>
-    <body>
-        <header>
-            <nav class="navContenedor">
-                <div class="imagendiv">
-                    <img class="navContenedor__logo" src="../imagenes/klogo-removebg-preview (1).png" alt="Kairos Deco" title="Kairos Logo">
-                </div>    
-                <ul class="navContenedor__lista">
-                    <li class=" navContenedor__lista--item"><i class="fas fa-home"></i><a href="../index.html">Inicio</a></li>
-                    <li class=" navContenedor__lista--item"><i class="fas fa-user-friends"></i><a href="../nosotros/nosotros.html">Nosotros</a></li>
-                    <li class=" navContenedor__lista--item"><i class="fas fa-seedling"></i><a href="../macetas/macetas.html">Macetas</a></li>
-                    <li class=" navContenedor__lista--item"><i class="fas fa-heart"></i><a href="velas.html">Velas</a></li>
-                    <li class=" navContenedor__lista--item"><i class="fas fa-phone-alt"></i><a href="../contacto/contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
-        </header>
-        <div class="divVelas">
-            <h1 class="divVelas__title">Velas</h1>
-            <article>
-                <img src="../velas/amanecer.png" alt="Vela soja Amanecer" title="Amanecer">
-               <aside>
-                   <h2 class="divVelas__subtitle">Amanecer</h2>
-                   <p class="divVelas__descripcion">Una experiencia increíble en aromática dispuesta en un recipiete clasico y elegante.</p>
-                   <table class="divVelas__tabla">
-                    <tr>
-                         <th>Modelo</th>
-                         <th>Material</th>
-                         <th>Tamaño</th>
-                         <th>Color</th>
-                    </tr>
-                    <tr>
-                         <td>Amanecer</td>
-                         <td>Cera de soja y vidrio</td>
-                         <td>220 cc</td>
-                         <td>Blanco</td>
-                    </tr>
-                </table>
-                   <span class="divVelas__precio">Precio: $440</span>                
-               </aside>
-            </article>
-            <article>
-                <img src="../velas/hexagonal.png" alt="Vela soja Hexagonal" title="Hexagonal">
-               <aside>
-                   <h2 class="divVelas__subtitle">Hexagonal</h2>
-                   <p class="divVelas__descripcion">Un modelo visualmente perfecto. Ayudará a decorar e inundar tu hogar de aromas excepcionales.</p>
-                   <table class="divVelas__tabla">
-                    <tr>
-                         <th>Modelo</th>
-                         <th>Material</th>
-                         <th>Tamaño</th>
-                         <th>Color</th>
-                    </tr>
-                    <tr>
-                         <td>Hexagonal</td>
-                         <td>Cera de soja y vidrio</td>
-                         <td>190 cc</td>
-                         <td>Blanco</td>
-                    </tr>
-                </table>
-                   <span class="divVelas__precio">Precio: $390</span>                
-               </aside>
-               <article>
-                <img src="../velas/bombones.png" alt="Bombones de soja" title="Bombones">
-               <aside>
-                   <h2 class="divVelas__subtitle">Bombones</h2>
-                   <p class="divVelas__descripcion">Aromas en bombones, utilizá tu hornito y perfuma momentos con Kairos Deco.</p>
-                   <table class="divVelas__tabla">
-                    <tr>
-                         <th>Modelo</th>
-                         <th>Material</th>
-                         <th>Tamaño</th>
-                         <th>Color</th>
-                    </tr>
-                    <tr>
-                         <td>Bombones</td>
-                         <td>Cera de soja</td>
-                         <td>100 gr</td>
-                         <td>Blanco</td>
-                    </tr>
-                </table>
-                   <span class="divVelas__precio">Precio: $250</span>                
-               </aside>
-            </article>
-            </article>
+<body>
+    <header>
+        <nav class="navContenedor">
+            <div class="imagendiv">
+                <img class="navContenedor__logo" src="../imagenes/klogo-removebg-preview (1).png" alt="Kairos Deco" title="Kairos Logo">
+            </div>    
+            <ul class="navContenedor__lista">
+                <li class=" navContenedor__lista--item"><i class="fas fa-home"></i><a href="../index.html">Inicio</a></li>
+                <li class=" navContenedor__lista--item"><i class="fas fa-user-friends"></i><a href="../nosotros/nosotros.html">Nosotros</a></li>
+                <li class=" navContenedor__lista--item"><i class="fas fa-seedling"></i><a href="../macetas/macetas.html">Macetas</a></li>
+                <li class=" navContenedor__lista--item"><i class="fas fa-heart"></i><a href="velas.html">Velas</a></li>
+                <li class=" navContenedor__lista--item"><i class="fas fa-phone-alt"></i><a href="../contacto/contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="divVelas__sección--title"></div>
+        <div class="container">
+            <section class="row align-items-start">
+                <article class="col-md-4">
+                    <img src="./amanecer.png" class="img-thumbnail" alt="Vela de soja" title="Amanecer">
+                    <aside>
+                        <h2 class="divVelas__subtitle">Amanecer</h2>
+                        <p class="divVelas__descripcion">Una experiencia increíble en aromática dispuesta en un recipiete clasico y elegante.</p>
+                        <p>
+                        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAmanecer" aria-expanded="false" aria-controls="collapseExample">Caracteristicas</button>
+                        </p>
+                        <div class="collapse" id="collapseAmanecer">
+                        <div class="card card-body">
+                            <table class="table table-hover">
+                                <tr>
+                                    <th>Modelo</th>
+                                    <th>Material</th>
+                                    <th>Tamaño</th>
+                                    <th>Color</th>
+                            </tr>
+                            <tr>
+                                    <td>Amanecer</td>
+                                    <td>Cera de soja y vidrio</td>
+                                    <td>220 cc</td>
+                                    <td>Blanco</td>
+                            </tr>
+                            </table>
+                        </div>
+                        <span class="divVelas__precio">Precio: $500</span>
+                        </div>                                                   
+                                            
+                    </aside>
+                </article>
+                <article class="col-md-4">
+                    <img src="./hexagonal.png" class="img-thumbnail" alt="Vela de soja hexagonal" title="Hexagonal">
+                    <aside>
+                        <h2 class="divVelas__subtitle">Hexagonal</h2>
+                        <p class="divVelas__descripcion">Un modelo visualmente perfecto. Ayudará a decorar e inundar tu hogar de aromas excepcionales.</p>
+                        <p>
+                        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapsehexagonal" aria-expanded="false" aria-controls="collapseExample">Caracteristicas</button>
+                        </p>
+                        <div class="collapse" id="collapsehexagonal">
+                        <div class="card card-body">
+                            <table class="table table-hover">
+                                <tr>
+                                    <th>Modelo</th>
+                                    <th>Material</th>
+                                    <th>Tamaño</th>
+                                    <th>Color</th>
+                            </tr>
+                            <tr>
+                                    <td>Hexagonal</td>
+                                    <td>Cera de soja y vidrio</td>
+                                    <td>190 cc</td>
+                                    <td>Blanco</td>
+                            </tr>
+                            </table>
+                        </div>
+                        <span class="divVelas__precio">Precio: $450</span>
+                        </div>                               
+                    </aside>
+                </article>
+                <article class="col-md-4">
+                    <img src="./bombones.png" class="img-thumbnail" alt="Bombones aromaticos" title="Bombones">
+                    <aside>
+                        <h2 class="divBombones__subtitle">Bombones</h2>
+                        <p class="divBombones__descripcion">La geometría de esta maceta logrará despertar tu mayor creatividad.</p>
+                        <p>
+                        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseBombones" aria-expanded="false" aria-controls="collapseExample">Caracteristicas</button>
+                        </p>
+                        <div class="collapse" id="collapseBombones">
+                        <div class="card card-body">
+                            <table class="table table-hover">
+                                <tr>
+                                    <th>Modelo</th>
+                                    <th>Material</th>
+                                    <th>Tamaño</th>
+                                    <th>Color</th>
+                            </tr>
+                            <tr>
+                                    <td>Bombones</td>
+                                    <td>Cera de soja</td>
+                                    <td>100 gr</td>
+                                    <td>Blanco</td>
+                            </tr>
+                            </table>
+                        </div>
+                        <span class="divMacetas__precio">Precio: $400</span>
+                        </div>
+                    </aside>
+                </article>
+            </section>   
+        </div>     
+    </main>    
+    <footer class="pie">
+        <div class="pieDiv__img">
+                <img src="../imagenes/klogo-removebg-preview (1).png" alt="Kairos Deco" title="Kairos Logo">   
         </div>
-        <footer class="pie">
-            <div class="pieDiv__img">
-                 <img src="../imagenes/klogo-removebg-preview (1).png" alt="Kairos Deco" title="Kairos Logo">   
-            </div>
-            <div class="pieDiv__centrado">
-                 <div class="pieDiv__title">
-                     <h3 class="pie__title--title">Kairos Deco -</h3>
-                     <h3 class="pie__title--complemento">Todos los derechos reservados</h3>
-                 </div>
-                 <div class="pieDiv__liHorarios">
-                     <h3 class="pieDiv__liHorarios--title">Horarios</h3>
-                     <ul class="pie__lista">
-                         <li>Lunes a viernes de 08:00 a 18:00</li>
-                         <li>Sabados de 08:00 a 12:00</li>
-                     </ul>
-                 </div>
-            </div>
-             <div class="pieDiv__liIcon">
-                 <ul>
-                     <li class="pieDiv__liIcon--li"><a href="https://wa.me/+5493517522615/?text=Hola!%20me%20interesa%20un%20producto"><i class="fab fa-whatsapp"></i></a></li>
-                     <li class="pieDiv__liIcon--li"><a href="https://www.instagram.com/kairosdeco_cba/"><i class="fab fa-instagram-square"></i></a></li>
-                     <li class="pieDiv__liIcon--li"><a  href="https://www.facebook.com/Kairosdeco.cba"><i class="fab fa-facebook-square"></i></a></li>
-                     <li class="pieDiv__liIcon--li"><a href="mailto:lucaspino07@gmail.com"><i class="fas fa-envelope"></i></a></li>
-                 </ul>
-             </div>
-         </footer>
-    </body>
-    </html>
+        <div class="pieDiv__centrado">
+                <div class="pieDiv__title">
+                    <h3 class="pie__title--title">Kairos Deco -</h3>
+                    <h3 class="pie__title--complemento">Todos los derechos reservados</h3>
+                </div>
+                <div class="pieDiv__liHorarios">
+                    <h3 class="pieDiv__liHorarios--title">Horarios</h3>
+                    <ul class="pie__lista">
+                        <li>Lunes a viernes de 08:00 a 18:00</li>
+                        <li>Sabados de 08:00 a 12:00</li>
+                    </ul>
+                </div>
+        </div>
+        <div class="pieDiv__liIcon">
+            <ul>
+                <li class="pieDiv__liIcon--li"><a href="https://wa.me/+5493517522615/?text=Hola!%20me%20interesa%20un%20producto"><i class="fab fa-whatsapp"></i></a></li>
+                <li class="pieDiv__liIcon--li"><a href="https://www.instagram.com/kairosdeco_cba/"><i class="fab fa-instagram-square"></i></a></li>
+                <li class="pieDiv__liIcon--li"><a  href="https://www.facebook.com/Kairosdeco.cba"><i class="fab fa-facebook-square"></i></a></li>
+                <li class="pieDiv__liIcon--li"><a href="mailto:lucaspino07@gmail.com"><i class="fas fa-envelope"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+</body>
+</html>
