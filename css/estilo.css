@@ -40,7 +40,7 @@ html body {
         padding-right: 10px;
         color: #4B5035; }
 
-/* Presentación */
+/* INDEX */
 .divPrincipal {
   width: 80%;
   height: 650px;
@@ -70,7 +70,6 @@ html body {
       font-size: 30px;
       color: #E4E4D9; }
 
-/*main*/
 main {
   width: 80%;
   margin-left: auto;
@@ -253,110 +252,96 @@ main {
   grid-template-columns: repeat(2, 50% 50%);
   grid-template-rows: 300px 300px 300px 500px 500px;
   grid-template-areas: "aside article" "aside article"  "aside article"   "divimg divimg"  "divm divm"; }
-
-.NosotrosGrid__asideMacetas {
-  grid-area: aside;
-  background: url(../imagenes/MacetasNosotros.png);
-  background-size: cover;
-  background-position: bottom;
-  box-sizing: border-box;
-  border-bottom: solid 1px #4B5035;
-  border-top: solid 1px #4B5035; }
-
-.NosotrosGrid__article {
-  grid-area: article;
-  border-bottom: solid 1px #4B5035;
-  border-top: solid 1px #4B5035;
-  background: linear-gradient(to bottom, #c4bcbb, #E4E4D9);
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center; }
-
-.NosotrosGrid__article h1 {
-  color: #4B5035;
-  font-family: 'Great Vibes', cursive;
-  font-size: 60px;
-  padding: 10px;
-  margin: 50px; }
-
-.NosotrosGrid__article p {
-  font-family: 'Zen Loop', cursive;
-  font-weight: bold;
-  color: #4B5035;
-  font-size: 40px;
-  margin: 50px; }
-
-.NosotrosGrid__divVelas {
-  grid-area: divimg;
-  background-image: url(../imagenes/VelasNosotros.png);
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  border-bottom: solid 1px #4B5035; }
-
-.NosotrosGrid__divProductos {
-  grid-area: divm;
-  display: grid;
-  grid-template-columns: repeat(2, 50% 50%);
-  grid-template-areas: "gridDivMacetas gridDivVelas"; }
-
-.NosotrosGrid__divProductos--macetas {
-  grid-area: gridDivMacetas;
-  display: flex;
-  flex-direction: column;
-  text-align: center; }
-
-.NosotrosGrid__divProductos--macetas div {
-  background-image: url(../imagenes/MacetasNosotros__div.png);
-  background-size: cover;
-  background-position: center;
-  border: solid 1px #4B5035;
-  width: 85%;
-  height: 60%;
-  margin-right: auto;
-  margin-left: auto; }
-
-.NosotrosGrid__divProductos--macetas h2 {
-  font-family: 'Zen Loop', cursive;
-  font-weight: bold;
-  color: #4B5035;
-  font-size: 30px; }
-
-.NosotrosGrid__divProductos--macetas a {
-  font-family: Arial, Helvetica, sans-serif;
-  color: #4B5035;
-  font-size: 15px;
-  padding: 10px; }
-
-.NosotrosGrid__divProductos--velas {
-  grid-area: gridDivVelas;
-  display: flex;
-  flex-direction: column;
-  text-align: center; }
-
-.NosotrosGrid__divProductos--velas h2 {
-  font-family: 'Zen Loop', cursive;
-  font-weight: bold;
-  color: #4B5035;
-  font-size: 30px; }
-
-.NosotrosGrid__divProductos--velas a {
-  font-family: Arial, Helvetica, sans-serif;
-  color: #4B5035;
-  font-size: 15px;
-  padding: 10px; }
-
-.NosotrosGrid__divProductos--velas div {
-  background-image: url(../imagenes/VelasNosotros__div.png);
-  background-size: cover;
-  background-position: center;
-  border: solid 1px #4B5035;
-  width: 85%;
-  height: 60%;
-  margin-right: auto;
-  margin-left: auto; }
+  .NosotrosGrid__asideMacetas {
+    grid-area: aside;
+    background: url(../imagenes/MacetasNosotros.png);
+    background-size: cover;
+    background-position: bottom;
+    box-sizing: border-box;
+    border-bottom: solid 1px #4B5035;
+    border-top: solid 1px #4B5035; }
+  .NosotrosGrid__article {
+    grid-area: article;
+    border-bottom: solid 1px #4B5035;
+    border-top: solid 1px #4B5035;
+    background: linear-gradient(to bottom, #c4bcbb, #E4E4D9);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+    .NosotrosGrid__article h1 {
+      color: #4B5035;
+      font-family: 'Great Vibes', cursive;
+      font-size: 60px;
+      padding: 10px;
+      margin: 50px; }
+    .NosotrosGrid__article p {
+      font-family: 'Zen Loop', cursive;
+      font-weight: bold;
+      color: #4B5035;
+      font-size: 40px;
+      margin: 50px; }
+  .NosotrosGrid__asideVelas {
+    grid-area: divimg;
+    background-image: url(../imagenes/VelasNosotros.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    border-bottom: solid 1px #4B5035; }
+  .NosotrosGrid__articleProductos {
+    grid-area: divm;
+    display: grid;
+    grid-template-columns: repeat(2, 50% 50%);
+    grid-template-areas: "gridDivMacetas gridDivVelas"; }
+  .NosotrosGrid__articleProductos--macetas {
+    grid-area: gridDivMacetas;
+    display: flex;
+    flex-direction: column;
+    text-align: center; }
+    .NosotrosGrid__articleProductos--macetas div {
+      background-image: url(../imagenes/MacetasNosotros__div.png);
+      background-size: cover;
+      background-position: center;
+      border: solid 1px #4B5035;
+      width: 85%;
+      height: 60%;
+      margin-right: auto;
+      margin-left: auto; }
+    .NosotrosGrid__articleProductos--macetas h2 {
+      font-family: 'Zen Loop', cursive;
+      font-weight: bold;
+      color: #4B5035;
+      font-size: 30px; }
+    .NosotrosGrid__articleProductos--macetas a {
+      font-family: Arial, Helvetica, sans-serif;
+      color: #4B5035;
+      font-size: 15px;
+      padding: 10px; }
+  .NosotrosGrid__articleProductos--velas {
+    grid-area: gridDivVelas;
+    display: flex;
+    flex-direction: column;
+    text-align: center; }
+    .NosotrosGrid__articleProductos--velas div {
+      background-image: url(../imagenes/VelasNosotros__div.png);
+      background-size: cover;
+      background-position: center;
+      border: solid 1px #4B5035;
+      width: 85%;
+      height: 60%;
+      margin-right: auto;
+      margin-left: auto; }
+    .NosotrosGrid__articleProductos--velas h2 {
+      font-family: 'Zen Loop', cursive;
+      font-weight: bold;
+      color: #4B5035;
+      font-size: 30px; }
+    .NosotrosGrid__articleProductos--velas a {
+      font-family: Arial, Helvetica, sans-serif;
+      color: #4B5035;
+      font-size: 15px;
+      padding: 10px; }
 
 /* SECCIONES MACETAS - VELAS */
 .divMacetas__sección--title {
@@ -380,51 +365,42 @@ main {
 .container {
   width: 80%;
   margin-top: 2vh; }
-
-.col-md-4 {
-  padding-bottom: 10px; }
-
-.img-thumbnail {
-  background-color: #E4E4D9;
-  border: 1px solid #4B5035; }
-
-.col-md-4 aside h2 {
-  font-family: 'Zen Loop', cursive;
-  font-weight: bold;
-  color: #4B5035;
-  font-size: 30px;
-  text-align: center; }
-
-.col-md-4 aside p {
-  color: #4B5035;
-  font-size: 15px;
-  padding: 10px;
-  text-align: center; }
-
-.col-md-4 aside span {
-  color: #4B5035;
-  font-size: 15px;
-  padding: 10px;
-  font-weight: bold; }
-
-.card {
-  background-color: transparent; }
-
-.btn-primary {
-  color: #4B5035;
-  background-color: transparent;
-  border-color: #4B5035; }
-
-.btn-check:focus + .btn-primary, .btn-primary:focus {
-  color: #4B5035;
-  background-color: transparent;
-  border-color: #4B5035;
-  box-shadow: 0 0 0 0.25rem #4B5035; }
-
-.btn-primary:hover {
-  color: #4B5035;
-  background-color: transparent;
-  border-color: #4B5035; }
+  .container .col-md-4 {
+    padding-bottom: 10px; }
+    .container .col-md-4 .img-thumbnail {
+      background-color: #E4E4D9;
+      border: 1px solid #4B5035; }
+    .container .col-md-4 aside h2 {
+      font-family: 'Zen Loop', cursive;
+      font-weight: bold;
+      color: #4B5035;
+      font-size: 30px;
+      text-align: center; }
+    .container .col-md-4 aside p {
+      color: #4B5035;
+      font-size: 15px;
+      padding: 10px;
+      text-align: center; }
+    .container .col-md-4 aside span {
+      color: #4B5035;
+      font-size: 15px;
+      padding: 10px;
+      font-weight: bold; }
+    .container .col-md-4 aside .btn-primary {
+      color: #4B5035;
+      background-color: transparent;
+      border-color: #4B5035; }
+    .container .col-md-4 aside .btn-check:focus + .btn-primary, .container .col-md-4 aside .btn-primary:focus {
+      color: #4B5035;
+      background-color: transparent;
+      border-color: #4B5035;
+      box-shadow: 0 0 0 0.25rem #4B5035; }
+    .container .col-md-4 aside .btn-primary:hover {
+      color: #4B5035;
+      background-color: transparent;
+      border-color: #4B5035; }
+    .container .col-md-4 aside .card {
+      background-color: transparent; }
 
 /* SECCION CONTACTO */
 .logoContacto {
@@ -536,71 +512,58 @@ main {
   width: 100%;
   height: 200px;
   border-top: solid 1px #4B5035; }
-
-.pieDiv__img {
-  flex: 1; }
-
-.pieDiv__img img {
-  margin: 0;
-  padding: 0;
-  width: 10rem; }
-
-.pieDiv__centrado {
-  display: flex;
-  flex-direction: column;
-  flex: 2;
-  align-items: center;
-  justify-content: center; }
-
-.pieDiv__title {
-  display: flex;
-  flex-direction: row;
-  margin-top: 15px;
-  flex: 1; }
-
-.pie__title--title {
-  font-family: 'Great Vibes', cursive;
-  color: #4B5035;
-  font-size: 20px; }
-
-.pie__title--complemento {
-  color: #4B5035;
-  font-size: 20px; }
-
-.pieDiv__liHorarios {
-  display: flex;
-  flex-direction: column;
-  flex: 2; }
-
-.pieDiv__liHorarios--title {
-  color: #4B5035;
-  margin: auto;
-  padding: 0%;
-  justify-content: center; }
-
-.pie__lista li {
-  color: #4B5035;
-  font-family: 'Zen Loop', cursive;
-  list-style-type: none;
-  text-decoration: none; }
-
-.pieDiv__liIcon {
-  flex: 1; }
-
-.pieDiv__liIcon ul {
-  list-style-type: none;
-  display: flex;
-  flex-direction: row;
-  padding: 15px;
-  color: #4B5035;
-  justify-content: space-around; }
-
-.pieDiv__liIcon--li {
-  list-style-type: none; }
-
-.pieDiv__liIcon--li a {
-  text-decoration: none;
-  font-size: 2rem;
-  color: #4B5035;
-  display: flex;
-  flex-direction: row; }
+  .pieDiv__img {
+    flex: 1; }
+    .pieDiv__img img {
+      margin: 0;
+      padding: 0;
+      width: 10rem; }
+  .pieDiv__centrado {
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+    align-items: center;
+    justify-content: center; }
+    .pieDiv__centrado .pieDiv__title {
+      display: flex;
+      flex-direction: row;
+      margin-top: 15px;
+      flex: 1; }
+      .pieDiv__centrado .pieDiv__title .pie__title--title {
+        font-family: 'Great Vibes', cursive;
+        color: #4B5035;
+        font-size: 20px; }
+      .pieDiv__centrado .pieDiv__title .pie__title--complemento {
+        color: #4B5035;
+        font-size: 20px; }
+    .pieDiv__centrado .pieDiv__liHorarios {
+      display: flex;
+      flex-direction: column;
+      flex: 2; }
+      .pieDiv__centrado .pieDiv__liHorarios .pieDiv__liHorarios--title {
+        color: #4B5035;
+        margin: auto;
+        padding: 0%;
+        justify-content: center; }
+      .pieDiv__centrado .pieDiv__liHorarios .pie__lista li {
+        color: #4B5035;
+        font-family: 'Zen Loop', cursive;
+        list-style-type: none;
+        text-decoration: none; }
+  .pie .pieDiv__liIcon {
+    flex: 1; }
+    .pie .pieDiv__liIcon ul {
+      list-style-type: none;
+      display: flex;
+      flex-direction: row;
+      padding: 15px;
+      color: #4B5035;
+      justify-content: space-around; }
+      .pie .pieDiv__liIcon ul .pieDiv__liIcon--li {
+        list-style-type: none; }
+        .pie .pieDiv__liIcon ul .pieDiv__liIcon--li a {
+          text-decoration: none;
+          font-size: 2rem;
+          color: #4B5035;
+          display: flex;
+          flex-direction: row; }
