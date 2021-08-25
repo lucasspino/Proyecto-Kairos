@@ -529,6 +529,29 @@ main {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* SECCION CONTACTO */
 
 .logoContacto {
@@ -541,6 +564,136 @@ main {
     background-repeat: no-repeat;
     background-position: center center;
 }
+
+.ContenedorSeccionContacto {
+    width: 100%;
+    box-sizing: border-box;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+
+    &__divGrid {
+        width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+        height: 85%;
+        box-sizing: border-box;
+        border: solid 5px #ffff;
+        background-color: #b0b3a3;
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        grid-template-areas:
+        "mapa formulario" 
+    }
+
+    &__divGrid:hover {
+        transform: scale(110%, 110%);
+        transition: 2.3s;
+    }
+
+    .ContenedorSeccionContacto__divGrid--gridItem__1 {
+        grid-area: mapa;
+        align-self: center;
+        justify-self: center;
+        margin: 3vh;
+        width: 95%;
+        height: 90%;
+    }
+
+    .ContenedorSeccionContacto__divGrid--gridItem__2 {
+        grid-area: formulario;
+        align-self: center;
+        justify-self: center;
+        margin: 3vh;
+        width: 95%;
+        height: 90%;
+        border: none;
+       
+        &--form {
+            display: flex;
+            flex-direction: column;
+            align-items: center; 
+            
+            legend {
+                font-size: 40px;
+                font-family: 'Zen Loop', cursive;
+                color: #ffff; 
+            }
+            label {
+                font-size: 20px;
+                font-family: 'Zen Loop', cursive;
+                color: #ffff;
+            }
+            select {
+                margin: 1px;
+                padding: 7px;
+                font-size: 15px;
+                text-align: center;
+                font-family: 'Zen Loop', cursive;
+                color: #24261a; 
+                background: linear-gradient(to bottom, #c4bcbb, #E4E4D9);
+                width: 85%;
+                border: none;
+            }
+            input {
+                width: 85%;
+                padding: 3px;
+                margin-top: 10px ;
+                border: none;
+                border-bottom: solid 2px #E4E4D9;
+                background: transparent;
+                font-family: 'Zen Loop', cursive;
+                font-size: 18px;
+                color: #ffff;
+                font-weight: bold;
+            }
+            input:focus{
+                background: linear-gradient(to bottom, transparent,#878a7b);
+                outline: none;
+            }
+            textarea {
+                width: 85%;
+                border: none;
+                border-bottom: solid 2px #E4E4D9;
+                background: transparent;
+                font-family: 'Zen Loop', cursive;
+                font-size: 18px;
+                color: #ffff;
+                font-weight: bold;
+                resize: none;
+            }
+            textarea:focus {
+                background: linear-gradient(to bottom, transparent,#878a7b);
+                outline: none;
+            }
+            .boton {
+                width: 85%;
+                background: linear-gradient(to bottom, #c4bcbb, #E4E4D9);
+                font-size: 15px;
+                font-family: 'Zen Loop', cursive;
+                border: none;
+            }
+            .boton:focus {
+                border:solid 2px #E4E4D9 ;
+            } 
+        }
+    }    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -657,5 +810,4 @@ main {
     display: flex;
     flex-direction: row;  
 }
-
 
