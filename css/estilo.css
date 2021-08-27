@@ -9,7 +9,7 @@ html body {
   box-sizing: content-box;
   margin: auto;
   padding: 0px;
-  background: linear-gradient(to bottom, #E4E4D9, #C4BCBB);
+  background: linear-gradient(to bottom, #E4E4D9, #c4bcbb);
   width: 100%;
   height: 7rem;
   display: flex;
@@ -63,10 +63,10 @@ html body {
       text-decoration: none; }
     .divPrincipal div .divPrincipal__title {
       color: #E4E4D9;
-      font-family: 'Great Vibes', cursive;
+      font-family: "Great Vibes", cursive;
       font-size: 60px; }
     .divPrincipal div .nosotros__parrafo {
-      font-family: 'Zen Loop', cursive;
+      font-family: "Zen Loop", cursive;
       font-size: 30px;
       color: #E4E4D9; }
 
@@ -103,10 +103,10 @@ main {
         margin: 50px; }
         main .divContenedor__velas--aside div h2 {
           color: #4B5035;
-          font-family: 'Great Vibes', cursive;
+          font-family: "Great Vibes", cursive;
           font-size: 60px; }
         main .divContenedor__velas--aside div p {
-          font-family: 'Zen Loop', cursive;
+          font-family: "Zen Loop", cursive;
           font-weight: bold;
           color: #4B5035;
           font-size: 40px; }
@@ -137,10 +137,10 @@ main {
         margin: 50px; }
         main .divContenedor__macetas--aside div h2 {
           color: #4B5035;
-          font-family: 'Great Vibes', cursive;
+          font-family: "Great Vibes", cursive;
           font-size: 60px; }
         main .divContenedor__macetas--aside div p {
-          font-family: 'Zen Loop', cursive;
+          font-family: "Zen Loop", cursive;
           font-weight: bold;
           color: #4B5035;
           font-size: 40px; }
@@ -190,18 +190,18 @@ main {
           align-items: center; }
           main .divContenedor__contacto--article .gridItem2 .gridItem__2--form legend {
             font-size: 40px;
-            font-family: 'Zen Loop', cursive;
+            font-family: "Zen Loop", cursive;
             color: #ffff; }
           main .divContenedor__contacto--article .gridItem2 .gridItem__2--form label {
             font-size: 20px;
-            font-family: 'Zen Loop', cursive;
+            font-family: "Zen Loop", cursive;
             color: #ffff; }
           main .divContenedor__contacto--article .gridItem2 .gridItem__2--form select {
             margin: 1px;
             padding: 7px;
             font-size: 15px;
             text-align: center;
-            font-family: 'Zen Loop', cursive;
+            font-family: "Zen Loop", cursive;
             color: #24261a;
             background: linear-gradient(to bottom, #c4bcbb, #E4E4D9);
             width: 85%;
@@ -213,7 +213,7 @@ main {
             border: none;
             border-bottom: solid 2px #E4E4D9;
             background: transparent;
-            font-family: 'Zen Loop', cursive;
+            font-family: "Zen Loop", cursive;
             font-size: 18px;
             color: #ffff;
             font-weight: bold; }
@@ -225,7 +225,7 @@ main {
             border: none;
             border-bottom: solid 2px #E4E4D9;
             background: transparent;
-            font-family: 'Zen Loop', cursive;
+            font-family: "Zen Loop", cursive;
             font-size: 18px;
             color: #ffff;
             font-weight: bold;
@@ -237,7 +237,7 @@ main {
             width: 85%;
             background: linear-gradient(to bottom, #c4bcbb, #E4E4D9);
             font-size: 15px;
-            font-family: 'Zen Loop', cursive;
+            font-family: "Zen Loop", cursive;
             border: none; }
           main .divContenedor__contacto--article .gridItem2 .gridItem__2--form .boton:focus {
             border: solid 2px #E4E4D9; }
@@ -272,12 +272,12 @@ main {
     justify-content: center; }
     .NosotrosGrid__article h1 {
       color: #4B5035;
-      font-family: 'Great Vibes', cursive;
+      font-family: "Great Vibes", cursive;
       font-size: 60px;
       padding: 10px;
       margin: 50px; }
     .NosotrosGrid__article p {
-      font-family: 'Zen Loop', cursive;
+      font-family: "Zen Loop", cursive;
       font-weight: bold;
       color: #4B5035;
       font-size: 40px;
@@ -309,7 +309,7 @@ main {
       margin-right: auto;
       margin-left: auto; }
     .NosotrosGrid__articleProductos--macetas h2 {
-      font-family: 'Zen Loop', cursive;
+      font-family: "Zen Loop", cursive;
       font-weight: bold;
       color: #4B5035;
       font-size: 30px; }
@@ -333,7 +333,7 @@ main {
       margin-right: auto;
       margin-left: auto; }
     .NosotrosGrid__articleProductos--velas h2 {
-      font-family: 'Zen Loop', cursive;
+      font-family: "Zen Loop", cursive;
       font-weight: bold;
       color: #4B5035;
       font-size: 30px; }
@@ -371,7 +371,7 @@ main {
       background-color: #E4E4D9;
       border: 1px solid #4B5035; }
     .container .col-md-4 aside h2 {
-      font-family: 'Zen Loop', cursive;
+      font-family: "Zen Loop", cursive;
       font-weight: bold;
       color: #4B5035;
       font-size: 30px;
@@ -452,18 +452,18 @@ main {
       align-items: center; }
       .ContenedorSeccionContacto .ContenedorSeccionContacto__divGrid--gridItem__2--form legend {
         font-size: 40px;
-        font-family: 'Zen Loop', cursive;
+        font-family: "Zen Loop", cursive;
         color: #ffff; }
       .ContenedorSeccionContacto .ContenedorSeccionContacto__divGrid--gridItem__2--form label {
         font-size: 20px;
-        font-family: 'Zen Loop', cursive;
+        font-family: "Zen Loop", cursive;
         color: #ffff; }
       .ContenedorSeccionContacto .ContenedorSeccionContacto__divGrid--gridItem__2--form select {
         margin: 1px;
         padding: 7px;
         font-size: 15px;
         text-align: center;
-        font-family: 'Zen Loop', cursive;
+        font-family: "Zen Loop", cursive;
         color: #24261a;
         background: linear-gradient(to bottom, #c4bcbb, #E4E4D9);
         width: 85%;
@@ -475,7 +475,7 @@ main {
         border: none;
         border-bottom: solid 2px #E4E4D9;
         background: transparent;
-        font-family: 'Zen Loop', cursive;
+        font-family: "Zen Loop", cursive;
         font-size: 18px;
         color: #ffff;
         font-weight: bold; }
@@ -487,7 +487,7 @@ main {
         border: none;
         border-bottom: solid 2px #E4E4D9;
         background: transparent;
-        font-family: 'Zen Loop', cursive;
+        font-family: "Zen Loop", cursive;
         font-size: 18px;
         color: #ffff;
         font-weight: bold;
@@ -499,7 +499,7 @@ main {
         width: 85%;
         background: linear-gradient(to bottom, #c4bcbb, #E4E4D9);
         font-size: 15px;
-        font-family: 'Zen Loop', cursive;
+        font-family: "Zen Loop", cursive;
         border: none; }
       .ContenedorSeccionContacto .ContenedorSeccionContacto__divGrid--gridItem__2--form .boton:focus {
         border: solid 2px #E4E4D9; }
@@ -530,7 +530,7 @@ main {
       margin-top: 15px;
       flex: 1; }
       .pieDiv__centrado .pieDiv__title .pie__title--title {
-        font-family: 'Great Vibes', cursive;
+        font-family: "Great Vibes", cursive;
         color: #4B5035;
         font-size: 20px; }
       .pieDiv__centrado .pieDiv__title .pie__title--complemento {
@@ -547,7 +547,7 @@ main {
         justify-content: center; }
       .pieDiv__centrado .pieDiv__liHorarios .pie__lista li {
         color: #4B5035;
-        font-family: 'Zen Loop', cursive;
+        font-family: "Zen Loop", cursive;
         list-style-type: none;
         text-decoration: none; }
   .pie .pieDiv__liIcon {

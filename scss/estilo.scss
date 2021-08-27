@@ -3,7 +3,7 @@
 html body {
    margin: 0%;
    padding: 0%;
-   background: linear-gradient(to bottom, #c4bcbb, #E4E4D9); 
+   background: linear-gradient(to bottom, $segundo-color, $primer-color); 
 }
 
 /*header*/
@@ -12,7 +12,7 @@ html body {
     box-sizing: content-box;
     margin: auto;
     padding: 0px;
-    background: linear-gradient(to bottom, #E4E4D9, #C4BCBB);
+    background: linear-gradient(to bottom, $primer-color, $segundo-color);
     width: 100%;
     height: 7rem;
     display:flex;
@@ -32,7 +32,7 @@ html body {
         display: flex;
         flex-direction: row;
         padding: 15px;
-        color: #4B5035; 
+        color: $tercer-color; 
         
         &--item {
             margin: 10px;
@@ -43,10 +43,10 @@ html body {
             }
             a {
                 text-decoration: none;
-                font-family: Arial, Helvetica, sans-serif;
+                font-family: $tercera-fuente;
                 font-size: 24px;
                 padding-right: 10px;
-                color: #4B5035;  
+                color: $tercer-color;  
             }
        }
     }
@@ -63,8 +63,8 @@ html body {
     background-color: rgb(80, 75, 75);
     background-blend-mode: soft-light;
     box-sizing: border-box;
-    border-bottom: solid 1px #4B5035;
-    border-top: solid 1px #4B5035;
+    border-bottom: solid 1px $tercer-color;
+    border-top: solid 1px $tercer-color;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -77,14 +77,14 @@ html body {
             text-decoration: none;
         }
         .divPrincipal__title {
-            color: #E4E4D9;
-            font-family: 'Great Vibes', cursive;
+            color: $primer-color;
+            font-family: $primer-fuente;
             font-size: 60px;
         }
         .nosotros__parrafo {
-            font-family: 'Zen Loop', cursive;
+            font-family: $segunda-fuente;
             font-size: 30px;
-            color: #E4E4D9;
+            color: $primer-color;
         }
     }
 }
@@ -93,7 +93,7 @@ main {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
-    background: linear-gradient(to bottom, #c4bcbb, #E4E4D9); 
+    background: linear-gradient(to bottom, $segundo-color, $primer-color); 
 
     .divContenedor {
         display: grid;
@@ -110,15 +110,15 @@ main {
         background-image: url(../imagenes/velasindex.png);
         background-size: cover;
         box-sizing: border-box;
-        border-bottom: solid 1px #4B5035;
+        border-bottom: solid 1px $tercer-color;
        }
        &__velas--aside {
         grid-area: asidev;
         height: 650px;
-        background: linear-gradient(to bottom,#c4bcbb, #E4E4D9);
+        background: linear-gradient(to bottom,$segundo-color, $primer-color);
         text-align: center;
         box-sizing: border-box;
-        border-bottom: solid 1px #4B5035;
+        border-bottom: solid 1px $tercer-color;
         display: flex; 
         align-items: center;
         justify-content: center;
@@ -129,19 +129,19 @@ main {
                 margin: 50px;
 
                 h2 {
-                    color: #4B5035;
-                    font-family: 'Great Vibes', cursive;
+                    color: $tercer-color;
+                    font-family: $primer-fuente;
                     font-size: 60px;
                 }
                 p {
-                    font-family: 'Zen Loop', cursive;
+                    font-family: $segunda-fuente;
                     font-weight: bold;
-                    color: #4B5035;
+                    color: $tercer-color;
                     font-size: 40px;
                 }
                 a {
-                    font-family: Arial, Helvetica, sans-serif;
-                    color: #4B5035;
+                    font-family: $tercera-fuente;
+                    color: $tercer-color;
                     font-size: 30px;
                 }
             }    
@@ -152,15 +152,15 @@ main {
             background-size: cover;
             background-position: right;
             box-sizing: border-box;
-            border-bottom: solid 1px #4B5035;
+            border-bottom: solid 1px $tercer-color;
         }
     
         &__macetas--aside {
             grid-area: articlem;
             height: 650px;
-            background: linear-gradient(to bottom, #E4E4D9, #c4bcbb);
+            background: linear-gradient(to bottom, $primer-color, $segundo-color);
             box-sizing: border-box;
-            border-bottom: solid 1px #4B5035;
+            border-bottom: solid 1px $tercer-color;
             text-align: center;
             display: flex; 
             align-items: center;
@@ -172,21 +172,21 @@ main {
                 margin: 50px;
 
                 h2 {
-                    color: #4B5035;
-                    font-family: 'Great Vibes', cursive;
+                    color: $tercer-color;
+                    font-family: $primer-fuente;
                     font-size: 60px;
                 }
 
                 p {
-                    font-family: 'Zen Loop', cursive;
+                    font-family: $segunda-fuente;
                     font-weight: bold;
-                    color: #4B5035;
+                    color: $tercer-color;
                     font-size: 40px;
                 }
 
                 a {
-                    font-family: Arial, Helvetica, sans-serif;
-                    color: #4B5035;
+                    font-family: $tercera-fuente;
+                    color: $tercer-color;
                     font-size: 30px;
                 }
             }
@@ -197,7 +197,7 @@ main {
             display: flex;
             align-items: center;
             flex-wrap: wrap;
-            background: linear-gradient(to bottom, #c4bcbb, #E4E4D9);
+            background: linear-gradient(to bottom, $segundo-color, $primer-color);
             
             &--div {
                 width: 80%;
@@ -243,12 +243,12 @@ main {
     
                     legend {
                         font-size: 40px;
-                        font-family: 'Zen Loop', cursive;
+                        font-family: $segunda-fuente;
                         color: #ffff; 
                     }
                     label {
                         font-size: 20px;
-                        font-family: 'Zen Loop', cursive;
+                        font-family: $segunda-fuente;
                         color: #ffff;
                     }
                     select {
@@ -256,9 +256,9 @@ main {
                         padding: 7px;
                         font-size: 15px;
                         text-align: center;
-                        font-family: 'Zen Loop', cursive;
+                        font-family: $segunda-fuente;
                         color: #24261a; 
-                        background: linear-gradient(to bottom, #c4bcbb, #E4E4D9);
+                        background: linear-gradient(to bottom, $segundo-color, $primer-color);
                         width: 85%;
                         border: none;
                     }
@@ -267,9 +267,9 @@ main {
                         padding: 3px;
                         margin-top: 10px ;
                         border: none;
-                        border-bottom: solid 2px #E4E4D9;
+                        border-bottom: solid 2px $primer-color;
                         background: transparent;
-                        font-family: 'Zen Loop', cursive;
+                        font-family: $segunda-fuente;
                         font-size: 18px;
                         color: #ffff;
                         font-weight: bold;
@@ -281,9 +281,9 @@ main {
                     textarea {
                         width: 85%;
                         border: none;
-                        border-bottom: solid 2px #E4E4D9;
+                        border-bottom: solid 2px $primer-color;
                         background: transparent;
-                        font-family: 'Zen Loop', cursive;
+                        font-family: $segunda-fuente;
                         font-size: 18px;
                         color: #ffff;
                         font-weight: bold;
@@ -295,13 +295,13 @@ main {
                     }
                     .boton {
                         width: 85%;
-                        background: linear-gradient(to bottom, #c4bcbb, #E4E4D9);
+                        background: linear-gradient(to bottom, $segundo-color, $primer-color);
                         font-size: 15px;
-                        font-family: 'Zen Loop', cursive;
+                        font-family: $segunda-fuente;
                         border: none;
                     }
                     .boton:focus {
-                        border:solid 2px #E4E4D9 ;
+                        border:solid 2px $primer-color ;
                     } 
                 }
             
@@ -316,7 +316,7 @@ main {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
-    background: linear-gradient(to bottom, #c4bcbb, #E4E4D9);
+    background: linear-gradient(to bottom, $segundo-color, $primer-color);
     display: grid;
     grid-template-columns: repeat(2, 50% 50%);
     grid-template-rows: 300px 300px 300px 500px 500px;
@@ -333,15 +333,15 @@ main {
     background-size: cover;
     background-position: bottom;
     box-sizing: border-box;
-    border-bottom: solid 1px #4B5035;
-    border-top: solid 1px #4B5035;
+    border-bottom: solid 1px $tercer-color;
+    border-top: solid 1px $tercer-color;
     }
 
     &__article {
         grid-area: article;
-        border-bottom: solid 1px #4B5035;
-        border-top: solid 1px #4B5035;
-        background: linear-gradient(to bottom, #c4bcbb, #E4E4D9);
+        border-bottom: solid 1px $tercer-color;
+        border-top: solid 1px $tercer-color;
+        background: linear-gradient(to bottom, $segundo-color, $primer-color);
         text-align: center;
         display: flex;
         flex-direction: column; 
@@ -349,17 +349,17 @@ main {
         justify-content: center;
 
         h1 {
-            color: #4B5035;
-            font-family: 'Great Vibes', cursive;
+            color: $tercer-color;
+            font-family: $primer-fuente;
             font-size: 60px;
             padding: 10px;
             margin: 50px;
         }
 
         p {
-            font-family: 'Zen Loop', cursive;
+            font-family: $segunda-fuente;
             font-weight: bold;
-            color: #4B5035;
+            color: $tercer-color;
             font-size: 40px;
             margin: 50px;       
         }
@@ -371,7 +371,7 @@ main {
         background-size: cover;
         background-position: center;
         background-attachment: fixed;
-        border-bottom: solid 1px #4B5035;
+        border-bottom: solid 1px $tercer-color;
     }
 
     &__articleProductos {
@@ -392,21 +392,21 @@ main {
         background-image: url(../imagenes/MacetasNosotros__div.png);
         background-size: cover;
         background-position: center;
-        border: solid 1px #4B5035;
+        border: solid 1px $tercer-color;
         width: 85%;
         height: 60%;
         margin-right: auto;
         margin-left: auto;
         }
         h2 {
-            font-family: 'Zen Loop', cursive;
+            font-family: $segunda-fuente;
             font-weight: bold;
-            color: #4B5035;
+            color: $tercer-color;
             font-size: 30px;
         }
         a {
-            font-family: Arial, Helvetica, sans-serif;
-            color: #4B5035;
+            font-family: $tercera-fuente;
+            color: $tercer-color;
             font-size: 15px;
             padding: 10px;
         }
@@ -421,21 +421,21 @@ main {
             background-image: url(../imagenes/VelasNosotros__div.png);
             background-size: cover;
             background-position: center;
-            border: solid 1px #4B5035;
+            border: solid 1px $tercer-color;
             width: 85%;
             height: 60%;
             margin-right: auto;
             margin-left: auto;   
         }
         h2 {
-            font-family: 'Zen Loop', cursive;
+            font-family: $segunda-fuente;
             font-weight: bold;
-            color: #4B5035;
+            color: $tercer-color;
             font-size: 30px;
         }
         a {
-            font-family: Arial, Helvetica, sans-serif;
-            color: #4B5035;
+            font-family: $tercera-fuente;
+            color: $tercer-color;
             font-size: 15px;
             padding: 10px;
         }
@@ -447,7 +447,7 @@ main {
    
     width: 100%;
     height: 300px;
-    border-top: solid 1px #4B5035;
+    border-top: solid 1px $tercer-color;
     background-image: url(../imagenes/nuestrasMacetas.png);
     background-size: contain;
     background-repeat: no-repeat;
@@ -458,7 +458,7 @@ main {
    
     width: 100%;
     height: 300px;
-    border-top: solid 1px #4B5035;
+    border-top: solid 1px $tercer-color;
     background-image: url(../imagenes/nuestrasVelas.png);
     background-size: contain;
     background-repeat: no-repeat;
@@ -473,46 +473,46 @@ main {
         padding-bottom: 10px;
         
         .img-thumbnail {
-            background-color: #E4E4D9;
-            border: 1px solid #4B5035;
+            background-color: $primer-color;
+            border: 1px solid $tercer-color;
         }
 
         aside {
            
             h2 {
-                font-family: 'Zen Loop', cursive;
+                font-family: $segunda-fuente;
                 font-weight: bold;
-                color: #4B5035;
+                color: $tercer-color;
                 font-size: 30px;
                 text-align: center;
             }
             p {
-                color: #4B5035;
+                color: $tercer-color;
                 font-size: 15px;
                 padding: 10px;
                 text-align: center;
             }
             span {
-                color: #4B5035;
+                color: $tercer-color;
                 font-size: 15px;
                 padding: 10px;  
                 font-weight: bold;
             }
             .btn-primary {
-                color: #4B5035;
+                color: $tercer-color;
                 background-color: transparent;
-                border-color: #4B5035;
+                border-color: $tercer-color;
             }
             .btn-check:focus+.btn-primary, .btn-primary:focus {
-                color: #4B5035;
+                color: $tercer-color;
                 background-color: transparent;
-                border-color: #4B5035;
-                box-shadow: 0 0 0 0.25rem #4B5035 ;
+                border-color: $tercer-color;
+                box-shadow: 0 0 0 0.25rem $tercer-color ;
             }
             .btn-primary:hover {
-                color: #4B5035;
+                color: $tercer-color;
                 background-color: transparent;
-                border-color: #4B5035;
+                border-color: $tercer-color;
             }
             .card {
                 background-color: transparent;
@@ -527,7 +527,7 @@ main {
    
     width: 100%;
     height: 300px;
-    border-top: solid 1px #4B5035;
+    border-top: solid 1px $tercer-color;
     background-image: url(../imagenes/RegalaMomentosUnicos.png);
     background-size: contain;
     background-repeat: no-repeat;
@@ -584,12 +584,12 @@ main {
             
             legend {
                 font-size: 40px;
-                font-family: 'Zen Loop', cursive;
+                font-family: $segunda-fuente;
                 color: #ffff; 
             }
             label {
                 font-size: 20px;
-                font-family: 'Zen Loop', cursive;
+                font-family: $segunda-fuente;
                 color: #ffff;
             }
             select {
@@ -597,9 +597,9 @@ main {
                 padding: 7px;
                 font-size: 15px;
                 text-align: center;
-                font-family: 'Zen Loop', cursive;
+                font-family: $segunda-fuente;
                 color: #24261a; 
-                background: linear-gradient(to bottom, #c4bcbb, #E4E4D9);
+                background: linear-gradient(to bottom, $segundo-color, $primer-color);
                 width: 85%;
                 border: none;
             }
@@ -608,9 +608,9 @@ main {
                 padding: 3px;
                 margin-top: 10px ;
                 border: none;
-                border-bottom: solid 2px #E4E4D9;
+                border-bottom: solid 2px $primer-color;
                 background: transparent;
-                font-family: 'Zen Loop', cursive;
+                font-family: $segunda-fuente;
                 font-size: 18px;
                 color: #ffff;
                 font-weight: bold;
@@ -622,9 +622,9 @@ main {
             textarea {
                 width: 85%;
                 border: none;
-                border-bottom: solid 2px #E4E4D9;
+                border-bottom: solid 2px $primer-color;
                 background: transparent;
-                font-family: 'Zen Loop', cursive;
+                font-family: $segunda-fuente;
                 font-size: 18px;
                 color: #ffff;
                 font-weight: bold;
@@ -636,13 +636,13 @@ main {
             }
             .boton {
                 width: 85%;
-                background: linear-gradient(to bottom, #c4bcbb, #E4E4D9);
+                background: linear-gradient(to bottom, $segundo-color, $primer-color);
                 font-size: 15px;
-                font-family: 'Zen Loop', cursive;
+                font-family: $segunda-fuente;
                 border: none;
             }
             .boton:focus {
-                border:solid 2px #E4E4D9 ;
+                border:solid 2px $primer-color ;
             } 
         }
     }    
@@ -652,12 +652,12 @@ main {
 /* footer */
 
 .pie {
-    background: linear-gradient(to bottom, #E4E4D9, #c4bcbb);
+    background: linear-gradient(to bottom, $primer-color, $segundo-color);
     display: flex;
     flex-direction: row; 
     width: 100%;
     height: 200px;   
-    border-top: solid 1px #4B5035;
+    border-top: solid 1px $tercer-color;
 
     &Div__img {
         flex: 1;
@@ -683,12 +683,12 @@ main {
             flex: 1;
             
             .pie__title--title  {
-                font-family: 'Great Vibes', cursive;
-                color: #4B5035;
+                font-family: $primer-fuente;
+                color: $tercer-color;
                 font-size: 20px; 
             } 
             .pie__title--complemento {
-                color: #4B5035;
+                color: $tercer-color;
                 font-size: 20px;   
             }
         }
@@ -699,15 +699,15 @@ main {
             flex: 2;
     
             .pieDiv__liHorarios--title {
-                color: #4B5035; 
+                color: $tercer-color; 
                 margin: auto;
                 padding: 0%;  
                 justify-content: center;  
             }
             .pie__lista {
                 li {
-                    color: #4B5035;
-                    font-family: 'Zen Loop', cursive;
+                    color: $tercer-color;
+                    font-family: $segunda-fuente;
                     list-style-type: none;
                     text-decoration: none;
                 }
@@ -723,7 +723,7 @@ main {
             display: flex;
             flex-direction: row;
             padding: 15px;
-            color: #4B5035;
+            color: $tercer-color;
             justify-content: space-around;
 
             .pieDiv__liIcon--li {
@@ -732,7 +732,7 @@ main {
                 a {
                     text-decoration: none;
                     font-size: 2rem;
-                    color: #4B5035;  
+                    color: $tercer-color;  
                     display: flex;
                     flex-direction: row;  
                 }
