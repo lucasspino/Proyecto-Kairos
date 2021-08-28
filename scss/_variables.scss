@@ -4,3 +4,27 @@ $tercer-color: #4B5035;
 $primer-fuente: 'Great Vibes', cursive;
 $segunda-fuente: 'Zen Loop', cursive;
 $tercera-fuente: Arial, Helvetica, sans-serif;
+
+/* maps */
+
+@mixin aside-inicio (){
+    text-align: center;
+    box-sizing: border-box;
+    border-bottom: solid 1px $tercer-color;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    height: 650px;
+}
+    
+@mixin contactoGridItem (){
+    align-self: center;
+    justify-self: center;
+    margin: 3vh;
+    width: 95%;
+    height: 90%;
+    border: none;
+}
+
+
+

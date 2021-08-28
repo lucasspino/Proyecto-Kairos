@@ -114,14 +114,8 @@ main {
        }
        &__velas--aside {
         grid-area: asidev;
-        height: 650px;
         background: linear-gradient(to bottom,$segundo-color, $primer-color);
-        text-align: center;
-        box-sizing: border-box;
-        border-bottom: solid 1px $tercer-color;
-        display: flex; 
-        align-items: center;
-        justify-content: center;
+        @include aside-inicio ();
 
             div {
                 align-items: start;
@@ -157,14 +151,8 @@ main {
     
         &__macetas--aside {
             grid-area: articlem;
-            height: 650px;
             background: linear-gradient(to bottom, $primer-color, $segundo-color);
-            box-sizing: border-box;
-            border-bottom: solid 1px $tercer-color;
-            text-align: center;
-            display: flex; 
-            align-items: center;
-            justify-content: center;
+            @include aside-inicio ();
 
             div {
                 align-items: start;
@@ -229,12 +217,7 @@ main {
              
             .gridItem2 {
                 grid-area: formulario;
-                align-self: center;
-                justify-self: center;
-                margin: 15px;
-                width: 95%;
-                height: 90%;
-                border: none;
+                @include contactoGridItem ();
                
                 .gridItem__2--form {
                     display: flex;
@@ -570,12 +553,7 @@ main {
 
     .ContenedorSeccionContacto__divGrid--gridItem__2 {
         grid-area: formulario;
-        align-self: center;
-        justify-self: center;
-        margin: 3vh;
-        width: 95%;
-        height: 90%;
-        border: none;
+        @include contactoGridItem ();
        
         &--form {
             display: flex;

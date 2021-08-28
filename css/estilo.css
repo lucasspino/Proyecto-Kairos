@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/* maps */
 html body {
   margin: 0%;
   padding: 0%;
@@ -89,14 +90,14 @@ main {
       border-bottom: solid 1px #4B5035; }
     main .divContenedor__velas--aside {
       grid-area: asidev;
-      height: 650px;
       background: linear-gradient(to bottom, #c4bcbb, #E4E4D9);
       text-align: center;
       box-sizing: border-box;
       border-bottom: solid 1px #4B5035;
       display: flex;
       align-items: center;
-      justify-content: center; }
+      justify-content: center;
+      height: 650px; }
       main .divContenedor__velas--aside div {
         align-items: start;
         box-sizing: border-box;
@@ -123,14 +124,14 @@ main {
       border-bottom: solid 1px #4B5035; }
     main .divContenedor__macetas--aside {
       grid-area: articlem;
-      height: 650px;
       background: linear-gradient(to bottom, #E4E4D9, #c4bcbb);
+      text-align: center;
       box-sizing: border-box;
       border-bottom: solid 1px #4B5035;
-      text-align: center;
       display: flex;
       align-items: center;
-      justify-content: center; }
+      justify-content: center;
+      height: 650px; }
       main .divContenedor__macetas--aside div {
         align-items: start;
         box-sizing: border-box;
@@ -180,7 +181,7 @@ main {
         grid-area: formulario;
         align-self: center;
         justify-self: center;
-        margin: 15px;
+        margin: 3vh;
         width: 95%;
         height: 90%;
         border: none; }
