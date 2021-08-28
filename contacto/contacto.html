@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../estilo.css">
+    <link rel="stylesheet" href="../css/estilo.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Zen+Loop&display=swap" rel="stylesheet">
@@ -15,7 +15,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/686969e7fb.js" crossorigin="anonymous"></script>
-    <title>Kairos Deco</title>
+    <title>Contacto | Kairos Deco</title>
+    <link rel="shortcut icon" href="../imagenes/Kairos Logo.png">
+
 </head>
 <body>
     <header>
@@ -32,54 +34,64 @@
             </ul>
         </nav>
     </header>
-    <div class="divContenedor__contacto--article--div">
-        <iframe class="gridItem__1" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3405.094223033764!2d-64.15792248425377!3d-31.41152998057196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a3debb3bc1bb%3A0xb5510f94363ace6c!2sMotor%20Detail!5e0!3m2!1ses-419!2sar!4v1628205616435!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>                                         
-        <fieldset class="gridItem2">
-            <form class="gridItem__2--form">
-                <legend>Contactanos</legend>
-                <label for="Provincia">¿De donde sos?</label>
-                    <select name="Provincia" id="">
-                        <option value="CABA">Ciudad Autonoma de Buenos Aires</option>
-                        <option value="CBA">Ciudad de Córdoba</option>
-                        <option value="Santa fé">Rosario de Santa fe</option>
-                     </select>
-                <label for="Nombre"><input type="text" name="Nombre" placeholder="Tu nombre" required></label>         
-                <label for="Teléfono"><input type="text" name="Teléfono" placeholder="Telefono de contacto" required></label> 
-                <label for="Correo"><input type="email" name="Correo" placeholder="Correo electronico" required></label>
-                <label for="Comentarios"><textarea name="Comentarios" placeholder="Dejanos tu comentario" rows="10px" cols="25px"></textarea></label>                               
-                <div>
-                    <label for="acepta">Deseo recibir ofertas a mi casilla de correo electronico</label>
-                    <input type="checkbox" name="acepta" value="Si">
-                </div>                               
-                <input type="submit" value="Enviar" class="boton">   
-            </form>
-        </fieldset>                 
-    </div>
+    <main>
+        <div class="logoContacto"></div>
+        <div class="ContenedorSeccionContacto">
+            <div class="ContenedorSeccionContacto__divGrid">
+                <iframe class="ContenedorSeccionContacto__divGrid--gridItem__1" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3405.094223033764!2d-64.15792248425377!3d-31.41152998057196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a3debb3bc1bb%3A0xb5510f94363ace6c!2sMotor%20Detail!5e0!3m2!1ses-419!2sar!4v1628205616435!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>                                         
+                <fieldset class="ContenedorSeccionContacto__divGrid--gridItem__2">
+                    <form class="ContenedorSeccionContacto__divGrid--gridItem__2--form">
+                        <legend>Contactanos</legend>
+                        <label for="Provincia">¿De donde sos?</label>
+                            <select name="Provincia" id="">
+                                <option value="CABA">Ciudad Autonoma de Buenos Aires</option>
+                                <option value="CBA">Ciudad de Córdoba</option>
+                                <option value="Santa fé">Rosario de Santa fe</option>
+                                </select>
+                        <label for="Nombre"></label>        
+                            <input type="text" name="Nombre" placeholder="Tu nombre" required> 
+                        <label for="Teléfono"></label> 
+                        <input type="text" name="Teléfono" placeholder="Telefono de contacto" required>
+                        <label for="Correo"></label>
+                            <input type="email" name="Correo" placeholder="Correo electronico" required>
+                        <label for="Comentarios"></textarea></label>       
+                        <textarea name="Comentarios" placeholder="Dejanos tu comentario" rows="10px" cols="25px"></textarea>                        
+                        <div>
+                            <label for="acepta">Deseo recibir ofertas a mi casilla de correo electronico</label>
+                            <input type="checkbox" name="acepta" value="Si">
+                        </div>                               
+                        <input type="submit" value="Enviar" class="boton">
+                    </form>
+                </fieldset>                 
+            </div>
+        </div>
+    </main>
     <footer class="pie">
         <div class="pieDiv__img">
              <img src="../imagenes/klogo-removebg-preview (1).png" alt="Kairos Deco" title="Kairos Logo">   
         </div>
         <div class="pieDiv__centrado">
-             <div class="pieDiv__title">
-                 <h3 class="pie__title--title">Kairos Deco -</h3>
-                 <h3 class="pie__title--complemento">Todos los derechos reservados</h3>
-             </div>
-             <div class="pieDiv__liHorarios">
-                 <h3 class="pieDiv__liHorarios--title">Horarios</h3>
-                 <ul class="pie__lista">
-                     <li>Lunes a viernes de 08:00 a 18:00</li>
-                     <li>Sabados de 08:00 a 12:00</li>
-                 </ul>
-             </div>
+                <div class="pieDiv__title">
+                    <h3 class="pie__title--title">Kairos Deco -</h3>
+                    <h3 class="pie__title--complemento">Todos los derechos reservados</h3>
+                </div>
+                <div class="pieDiv__liHorarios">
+                    <h3 class="pieDiv__liHorarios--title">Horarios</h3>
+                    <ul class="pie__lista">
+                        <li>Lunes a viernes de 08:00 a 18:00</li>
+                        <li>Sabados de 08:00 a 12:00</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="pieDiv__liIcon">
+                <ul>
+                    <li class="pieDiv__liIcon--li"><a href="https://wa.me/+5493517522615/?text=Hola!%20me%20interesa%20un%20producto"><i class="fab fa-whatsapp"></i></a></li>
+                    <li class="pieDiv__liIcon--li"><a href="https://www.instagram.com/kairosdeco_cba/"><i class="fab fa-instagram-square"></i></a></li>
+                     <li class="pieDiv__liIcon--li"><a  href="https://www.facebook.com/Kairosdeco.cba"><i class="fab fa-facebook-square"></i></a></li>
+                    <li class="pieDiv__liIcon--li"><a href="mailto:lucaspino07@gmail.com"><i class="fas fa-envelope"></i></a></li>
+                </ul>
+            </div>
         </div>
-         <div class="pieDiv__liIcon">
-             <ul>
-                 <li class="pieDiv__liIcon--li"><a href="https://wa.me/+5493517522615/?text=Hola!%20me%20interesa%20un%20producto"><i class="fab fa-whatsapp"></i></a></li>
-                 <li class="pieDiv__liIcon--li"><a href="https://www.instagram.com/kairosdeco_cba/"><i class="fab fa-instagram-square"></i></a></li>
-                 <li class="pieDiv__liIcon--li"><a  href="https://www.facebook.com/Kairosdeco.cba"><i class="fab fa-facebook-square"></i></a></li>
-                 <li class="pieDiv__liIcon--li"><a href="mailto:lucaspino07@gmail.com"><i class="fas fa-envelope"></i></a></li>
-             </ul>
-         </div>
-     </footer>
+    </footer>
 </body>
 </html>
