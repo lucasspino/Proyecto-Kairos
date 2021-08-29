@@ -19,12 +19,20 @@ html body {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+
+    @media (max-width:576px) and (min-width:300px){
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    flex-direction: column;
+    }
     
     &__logo {
         margin-top: 0%;
         margin-left: 0%;
         width: 5rem; 
-        height: 5rem;  
+        height: 5rem;
+        
     }
     
     &__lista {
@@ -32,25 +40,44 @@ html body {
         display: flex;
         flex-direction: row;
         padding: 15px;
-        color: $tercer-color; 
+        color: $tercer-color;
+       
+        
         
         &--item {
             margin: 10px;
             align-items: center; 
+
+            @media (max-width:576px) and (min-width:300px){
+                margin: 0;
+                padding: 1px;
+            }
+
             i {
                 margin-right: 10px;
                 font-size: 25px;  
+
+                @media (max-width:576px) and (min-width:300px){
+                    display: none;
+                }
             }
             a {
                 text-decoration: none;
                 font-family: $tercera-fuente;
                 font-size: 24px;
                 padding-right: 10px;
-                color: $tercer-color;  
+                color: $tercer-color; 
+               
+                @media (max-width:576px) and (min-width:300px){
+                    font-size: 11px;
+                    font-weight: bolder;
+                    align-items: center;
+                } 
             }
        }
     }
 }
+
 /* INDEX */
 
 .divPrincipal {
@@ -69,6 +96,11 @@ html body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    @media (max-width:576px) and (min-width:300px){
+        width: 100%;
+        
+    }
 
     div {
         text-align: center;
@@ -95,6 +127,10 @@ main {
     margin-right: auto;
     background: linear-gradient(to bottom, $segundo-color, $primer-color); 
 
+    @media (max-width:576px) and (min-width:300px){
+        width: 100%;     
+    }
+
     .divContenedor {
         display: grid;
         grid-template-columns: repeat(2, 50% 50%);
@@ -104,6 +140,18 @@ main {
        "articlem asidem" 
        "articlec articlec";
 
+       @media (max-width:576px) and (min-width:300px){
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        grid-template-rows: repeat(5, 400px);
+        grid-template-areas: 
+        "imgVelas imgVelas"
+        "velasAside velasAside"
+        "imgMacetas imgMacetas"
+        "asideMacetas asideMacetas"
+        "cont cont";
+    }
+
        &__velas--article {
         grid-area: articlev;
         height: 650px;
@@ -111,10 +159,22 @@ main {
         background-size: cover;
         box-sizing: border-box;
         border-bottom: solid 1px $tercer-color;
+
+        @media (max-width:576px) and (min-width:300px) {
+            grid-area: imgVelas;
+            height: 100%;
+        }
+
        }
        &__velas--aside {
         grid-area: asidev;
         background: linear-gradient(to bottom,$segundo-color, $primer-color);
+        
+        @media (max-width:576px) and (min-width:300px) {
+            grid-area: velasAside;
+            height: 100%;
+        }
+        
         @include aside-inicio ();
 
             div {
@@ -122,21 +182,34 @@ main {
                 box-sizing: border-box;
                 margin: 50px;
 
+                @media (max-width:576px) and (min-width:300px) {
+                    margin: 5px; 
+                }
+
                 h2 {
                     color: $tercer-color;
                     font-family: $primer-fuente;
                     font-size: 60px;
+                    @media (max-width:576px) and (min-width:300px) {
+                        font-size: 30px;
+                    }
                 }
                 p {
                     font-family: $segunda-fuente;
                     font-weight: bold;
                     color: $tercer-color;
                     font-size: 40px;
+                    @media (max-width:576px) and (min-width:300px) {
+                        font-size: 20px;
+                    }
                 }
                 a {
                     font-family: $tercera-fuente;
                     color: $tercer-color;
                     font-size: 30px;
+                    @media (max-width:576px) and (min-width:300px) {
+                        font-size: 15px;
+                    }
                 }
             }    
        }
@@ -147,11 +220,24 @@ main {
             background-position: right;
             box-sizing: border-box;
             border-bottom: solid 1px $tercer-color;
+
+            @media (max-width:576px) and (min-width:300px) {
+                grid-area: imgMacetas;
+                border-top: solid 1px $tercer-color;
+                border-bottom: solid 1px $tercer-color;
+            }
+
         }
     
         &__macetas--aside {
             grid-area: articlem;
             background: linear-gradient(to bottom, $primer-color, $segundo-color);
+           
+            @media (max-width:576px) and (min-width:300px) {
+                grid-area: asideMacetas;
+                height: 100%;
+            }
+
             @include aside-inicio ();
 
             div {
@@ -163,6 +249,10 @@ main {
                     color: $tercer-color;
                     font-family: $primer-fuente;
                     font-size: 60px;
+
+                    @media (max-width:576px) and (min-width:300px) {
+                        font-size: 30px;
+                    }
                 }
 
                 p {
@@ -170,12 +260,20 @@ main {
                     font-weight: bold;
                     color: $tercer-color;
                     font-size: 40px;
+
+                    @media (max-width:576px) and (min-width:300px) {
+                        font-size: 20px;
+                    }
                 }
 
                 a {
                     font-family: $tercera-fuente;
                     color: $tercer-color;
                     font-size: 30px;
+
+                    @media (max-width:576px) and (min-width:300px) {
+                        font-size: 15px;
+                    }
                 }
             }
         }
@@ -186,7 +284,12 @@ main {
             align-items: center;
             flex-wrap: wrap;
             background: linear-gradient(to bottom, $segundo-color, $primer-color);
+            @media (max-width:576px) and (min-width:300px) {
+                grid-area: cont;
+                height: 100%;
+            }
             
+
             &--div {
                 width: 85%;
                 margin-left: auto;
@@ -198,7 +301,9 @@ main {
                 display: grid;
                 grid-template-columns: repeat(2, 50%);
                 grid-template-areas:
-                "mapa formulario" 
+                "formulario formulario";
+                
+                
             }
                
             &--div:hover {
@@ -206,33 +311,41 @@ main {
                 transition: 2.3s;
             }
 
-            .gridItem__1 {
-                grid-area: mapa;
+            /* .gridItem__1 {
+                grid-area: map;
                 align-self: center;
                 justify-self: center;
                 margin: 3vh;
                 width: 95%;
                 height: 90%;
-            }
+
+                
+            }*/
              
             .gridItem2 {
                 grid-area: formulario;
                 @include contactoGridItem ();
-               
                 .gridItem__2--form {
                     display: flex;
                     flex-direction: column;
                     align-items: center;
-    
+                    
                     legend {
                         font-size: 40px;
                         font-family: $segunda-fuente;
-                        color: #ffff; 
+                        color: #ffff;
+                        @media (max-width:576px) and (min-width:300px) {
+                            font-size: 20px;
+                        } 
                     }
                     label {
                         font-size: 20px;
                         font-family: $segunda-fuente;
                         color: #ffff;
+                        @media (max-width:576px) and (min-width:300px) {
+                            font-size: 12px;
+                            height: max-content;
+                        }
                     }
                     select {
                         margin: 1px;
@@ -244,6 +357,9 @@ main {
                         background: linear-gradient(to bottom, $segundo-color, $primer-color);
                         width: 85%;
                         border: none;
+                        @media (max-width:576px) and (min-width:300px) {
+                            font-size: 10px;
+                        }
                     }
                     input {
                         width: 85%;
@@ -256,6 +372,9 @@ main {
                         font-size: 18px;
                         color: #ffff;
                         font-weight: bold;
+                        @media (max-width:576px) and (min-width:300px) {
+                            font-size: 12px;
+                        }
                     }
                     input:focus{
                         background: linear-gradient(to bottom, transparent,#878a7b);
@@ -271,10 +390,20 @@ main {
                         color: #ffff;
                         font-weight: bold;
                         resize: none;
+                        @media (max-width:576px) and (min-width:300px) {
+                            font-size: 12px;
+                            height: max-content;
+                        }
                     }
                     textarea:focus {
                         background: linear-gradient(to bottom, transparent,#878a7b);
                         outline: none;
+                    }
+
+                    div {
+                        @media (max-width:576px) and (min-width:300px) {
+                            display: none;
+                        }
                     }
                     .boton {
                         width: 85%;
@@ -282,6 +411,10 @@ main {
                         font-size: 15px;
                         font-family: $segunda-fuente;
                         border: none;
+                        @media (max-width:576px) and (min-width:300px) {
+                            font-size: 10px;
+                            height: max-content;
+                        }
                     }
                     .boton:focus {
                         border:solid 2px $primer-color ;
@@ -619,9 +752,27 @@ main {
     height: 200px;   
     border-top: solid 1px $tercer-color;
 
+    @media (max-width:576px) and (min-width:300px) {
+        width: 100%;
+        height: 800px;
+        display: grid;
+        grid-template-columns:repeat(2, 50%);
+        grid-template-rows:200px, 50px, 50px, 50px;
+        grid-template-areas:
+        "klogo klogo"
+        "derecho derecho"
+        "horario horario"
+        "redes redes";
+    }
+
     &Div__img {
         flex: 1;
         
+        @media (max-width:576px) and (min-width:300px) {
+            grid-area: klogo;
+            text-align: center;
+        }
+
         img {
             margin: 0;
             padding: 0;
@@ -641,6 +792,11 @@ main {
             flex-direction: row;
             margin-top: 15px;
             flex: 1;
+            @media (max-width:576px) and (min-width:300px) {
+                grid-area: derecho;
+                text-align: center;
+                align-self: center;
+            }
             
             .pie__title--title  {
                 font-family: $primer-fuente;
@@ -657,6 +813,11 @@ main {
             display: flex;
             flex-direction: column;
             flex: 2;
+            @media (max-width:576px) and (min-width:300px) {
+                grid-area: horarios;
+                text-align: center;
+                
+            }
     
             .pieDiv__liHorarios--title {
                 color: $tercer-color; 
@@ -677,7 +838,10 @@ main {
     
     .pieDiv__liIcon{
         flex: 1;
-
+        @media (max-width:576px) and (min-width:300px) {
+            grid-area: redes;
+            text-align: center;
+        }
         ul {
             list-style-type: none;
             display: flex;
@@ -685,6 +849,12 @@ main {
             padding: 15px;
             color: $tercer-color;
             justify-content: space-around;
+            @media (max-width:576px) and (min-width:300px) {
+                grid-area: redes;
+                text-align: center;
+                justify-content: space-between;
+                align-items: flex-start;
+            }
 
             .pieDiv__liIcon--li {
                 list-style-type: none; 

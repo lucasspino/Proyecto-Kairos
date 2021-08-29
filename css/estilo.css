@@ -17,6 +17,12 @@ html body {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap; }
+  @media (max-width: 576px) and (min-width: 300px) {
+    .navContenedor {
+      width: 100%;
+      height: 5rem;
+      display: flex;
+      flex-direction: column; } }
   .navContenedor__logo {
     margin-top: 0%;
     margin-left: 0%;
@@ -31,15 +37,27 @@ html body {
     .navContenedor__lista--item {
       margin: 10px;
       align-items: center; }
+      @media (max-width: 576px) and (min-width: 300px) {
+        .navContenedor__lista--item {
+          margin: 0;
+          padding: 1px; } }
       .navContenedor__lista--item i {
         margin-right: 10px;
         font-size: 25px; }
+        @media (max-width: 576px) and (min-width: 300px) {
+          .navContenedor__lista--item i {
+            display: none; } }
       .navContenedor__lista--item a {
         text-decoration: none;
         font-family: Arial, Helvetica, sans-serif;
         font-size: 24px;
         padding-right: 10px;
         color: #4B5035; }
+        @media (max-width: 576px) and (min-width: 300px) {
+          .navContenedor__lista--item a {
+            font-size: 11px;
+            font-weight: bolder;
+            align-items: center; } }
 
 /* INDEX */
 .divPrincipal {
@@ -58,6 +76,9 @@ html body {
   flex-direction: column;
   justify-content: center;
   align-items: center; }
+  @media (max-width: 576px) and (min-width: 300px) {
+    .divPrincipal {
+      width: 100%; } }
   .divPrincipal div {
     text-align: center; }
     .divPrincipal div a {
@@ -76,11 +97,20 @@ main {
   margin-left: auto;
   margin-right: auto;
   background: linear-gradient(to bottom, #c4bcbb, #E4E4D9); }
+  @media (max-width: 576px) and (min-width: 300px) {
+    main {
+      width: 100%; } }
   main .divContenedor {
     display: grid;
     grid-template-columns: repeat(2, 50% 50%);
     grid-template-rows: repeat(3, 650px);
     grid-template-areas: "articlev asidev"  "articlem asidem"  "articlec articlec"; }
+    @media (max-width: 576px) and (min-width: 300px) {
+      main .divContenedor {
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        grid-template-rows: repeat(5, 400px);
+        grid-template-areas: "imgVelas imgVelas" "velasAside velasAside" "imgMacetas imgMacetas" "asideMacetas asideMacetas" "cont cont"; } }
     main .divContenedor__velas--article {
       grid-area: articlev;
       height: 650px;
@@ -88,6 +118,10 @@ main {
       background-size: cover;
       box-sizing: border-box;
       border-bottom: solid 1px #4B5035; }
+      @media (max-width: 576px) and (min-width: 300px) {
+        main .divContenedor__velas--article {
+          grid-area: imgVelas;
+          height: 100%; } }
     main .divContenedor__velas--aside {
       grid-area: asidev;
       background: linear-gradient(to bottom, #c4bcbb, #E4E4D9);
@@ -98,23 +132,39 @@ main {
       align-items: center;
       justify-content: center;
       height: 650px; }
+      @media (max-width: 576px) and (min-width: 300px) {
+        main .divContenedor__velas--aside {
+          grid-area: velasAside;
+          height: 100%; } }
       main .divContenedor__velas--aside div {
         align-items: start;
         box-sizing: border-box;
         margin: 50px; }
+        @media (max-width: 576px) and (min-width: 300px) {
+          main .divContenedor__velas--aside div {
+            margin: 5px; } }
         main .divContenedor__velas--aside div h2 {
           color: #4B5035;
           font-family: "Great Vibes", cursive;
           font-size: 60px; }
+          @media (max-width: 576px) and (min-width: 300px) {
+            main .divContenedor__velas--aside div h2 {
+              font-size: 30px; } }
         main .divContenedor__velas--aside div p {
           font-family: "Zen Loop", cursive;
           font-weight: bold;
           color: #4B5035;
           font-size: 40px; }
+          @media (max-width: 576px) and (min-width: 300px) {
+            main .divContenedor__velas--aside div p {
+              font-size: 20px; } }
         main .divContenedor__velas--aside div a {
           font-family: Arial, Helvetica, sans-serif;
           color: #4B5035;
           font-size: 30px; }
+          @media (max-width: 576px) and (min-width: 300px) {
+            main .divContenedor__velas--aside div a {
+              font-size: 15px; } }
     main .divContenedor__macetas--article {
       grid-area: asidem;
       background-image: url(../imagenes/macetas.png);
@@ -122,6 +172,11 @@ main {
       background-position: right;
       box-sizing: border-box;
       border-bottom: solid 1px #4B5035; }
+      @media (max-width: 576px) and (min-width: 300px) {
+        main .divContenedor__macetas--article {
+          grid-area: imgMacetas;
+          border-top: solid 1px #4B5035;
+          border-bottom: solid 1px #4B5035; } }
     main .divContenedor__macetas--aside {
       grid-area: articlem;
       background: linear-gradient(to bottom, #E4E4D9, #c4bcbb);
@@ -132,6 +187,10 @@ main {
       align-items: center;
       justify-content: center;
       height: 650px; }
+      @media (max-width: 576px) and (min-width: 300px) {
+        main .divContenedor__macetas--aside {
+          grid-area: asideMacetas;
+          height: 100%; } }
       main .divContenedor__macetas--aside div {
         align-items: start;
         box-sizing: border-box;
@@ -140,22 +199,45 @@ main {
           color: #4B5035;
           font-family: "Great Vibes", cursive;
           font-size: 60px; }
+          @media (max-width: 576px) and (min-width: 300px) {
+            main .divContenedor__macetas--aside div h2 {
+              font-size: 30px; } }
         main .divContenedor__macetas--aside div p {
           font-family: "Zen Loop", cursive;
           font-weight: bold;
           color: #4B5035;
           font-size: 40px; }
+          @media (max-width: 576px) and (min-width: 300px) {
+            main .divContenedor__macetas--aside div p {
+              font-size: 20px; } }
         main .divContenedor__macetas--aside div a {
           font-family: Arial, Helvetica, sans-serif;
           color: #4B5035;
           font-size: 30px; }
+          @media (max-width: 576px) and (min-width: 300px) {
+            main .divContenedor__macetas--aside div a {
+              font-size: 15px; } }
     main .divContenedor__contacto--article {
       grid-area: articlec;
       height: 650px;
       display: flex;
       align-items: center;
       flex-wrap: wrap;
-      background: linear-gradient(to bottom, #c4bcbb, #E4E4D9); }
+      background: linear-gradient(to bottom, #c4bcbb, #E4E4D9);
+      /* .gridItem__1 {
+                grid-area: map;
+                align-self: center;
+                justify-self: center;
+                margin: 3vh;
+                width: 95%;
+                height: 90%;
+
+                
+            }*/ }
+      @media (max-width: 576px) and (min-width: 300px) {
+        main .divContenedor__contacto--article {
+          grid-area: cont;
+          height: 100%; } }
       main .divContenedor__contacto--article--div {
         width: 85%;
         margin-left: auto;
@@ -166,17 +248,10 @@ main {
         background-color: #b0b3a3;
         display: grid;
         grid-template-columns: repeat(2, 50%);
-        grid-template-areas: "mapa formulario"; }
+        grid-template-areas: "formulario formulario"; }
       main .divContenedor__contacto--article--div:hover {
         transform: scale(110%, 110%);
         transition: 2.3s; }
-      main .divContenedor__contacto--article .gridItem__1 {
-        grid-area: mapa;
-        align-self: center;
-        justify-self: center;
-        margin: 3vh;
-        width: 95%;
-        height: 90%; }
       main .divContenedor__contacto--article .gridItem2 {
         grid-area: formulario;
         align-self: center;
@@ -193,10 +268,17 @@ main {
             font-size: 40px;
             font-family: "Zen Loop", cursive;
             color: #ffff; }
+            @media (max-width: 576px) and (min-width: 300px) {
+              main .divContenedor__contacto--article .gridItem2 .gridItem__2--form legend {
+                font-size: 20px; } }
           main .divContenedor__contacto--article .gridItem2 .gridItem__2--form label {
             font-size: 20px;
             font-family: "Zen Loop", cursive;
             color: #ffff; }
+            @media (max-width: 576px) and (min-width: 300px) {
+              main .divContenedor__contacto--article .gridItem2 .gridItem__2--form label {
+                font-size: 12px;
+                height: max-content; } }
           main .divContenedor__contacto--article .gridItem2 .gridItem__2--form select {
             margin: 1px;
             padding: 7px;
@@ -207,6 +289,9 @@ main {
             background: linear-gradient(to bottom, #c4bcbb, #E4E4D9);
             width: 85%;
             border: none; }
+            @media (max-width: 576px) and (min-width: 300px) {
+              main .divContenedor__contacto--article .gridItem2 .gridItem__2--form select {
+                font-size: 10px; } }
           main .divContenedor__contacto--article .gridItem2 .gridItem__2--form input {
             width: 85%;
             padding: 3px;
@@ -218,6 +303,9 @@ main {
             font-size: 18px;
             color: #ffff;
             font-weight: bold; }
+            @media (max-width: 576px) and (min-width: 300px) {
+              main .divContenedor__contacto--article .gridItem2 .gridItem__2--form input {
+                font-size: 12px; } }
           main .divContenedor__contacto--article .gridItem2 .gridItem__2--form input:focus {
             background: linear-gradient(to bottom, transparent, #878a7b);
             outline: none; }
@@ -231,15 +319,26 @@ main {
             color: #ffff;
             font-weight: bold;
             resize: none; }
+            @media (max-width: 576px) and (min-width: 300px) {
+              main .divContenedor__contacto--article .gridItem2 .gridItem__2--form textarea {
+                font-size: 12px;
+                height: max-content; } }
           main .divContenedor__contacto--article .gridItem2 .gridItem__2--form textarea:focus {
             background: linear-gradient(to bottom, transparent, #878a7b);
             outline: none; }
+          @media (max-width: 576px) and (min-width: 300px) {
+            main .divContenedor__contacto--article .gridItem2 .gridItem__2--form div {
+              display: none; } }
           main .divContenedor__contacto--article .gridItem2 .gridItem__2--form .boton {
             width: 85%;
             background: linear-gradient(to bottom, #c4bcbb, #E4E4D9);
             font-size: 15px;
             font-family: "Zen Loop", cursive;
             border: none; }
+            @media (max-width: 576px) and (min-width: 300px) {
+              main .divContenedor__contacto--article .gridItem2 .gridItem__2--form .boton {
+                font-size: 10px;
+                height: max-content; } }
           main .divContenedor__contacto--article .gridItem2 .gridItem__2--form .boton:focus {
             border: solid 2px #E4E4D9; }
 
@@ -513,8 +612,20 @@ main {
   width: 100%;
   height: 200px;
   border-top: solid 1px #4B5035; }
+  @media (max-width: 576px) and (min-width: 300px) {
+    .pie {
+      width: 100%;
+      height: 800px;
+      display: grid;
+      grid-template-columns: repeat(2, 50%);
+      grid-template-rows: 200px, 50px, 50px, 50px;
+      grid-template-areas: "klogo klogo" "derecho derecho" "horario horario" "redes redes"; } }
   .pieDiv__img {
     flex: 1; }
+    @media (max-width: 576px) and (min-width: 300px) {
+      .pieDiv__img {
+        grid-area: klogo;
+        text-align: center; } }
     .pieDiv__img img {
       margin: 0;
       padding: 0;
@@ -530,6 +641,11 @@ main {
       flex-direction: row;
       margin-top: 15px;
       flex: 1; }
+      @media (max-width: 576px) and (min-width: 300px) {
+        .pieDiv__centrado .pieDiv__title {
+          grid-area: derecho;
+          text-align: center;
+          align-self: center; } }
       .pieDiv__centrado .pieDiv__title .pie__title--title {
         font-family: "Great Vibes", cursive;
         color: #4B5035;
@@ -541,6 +657,10 @@ main {
       display: flex;
       flex-direction: column;
       flex: 2; }
+      @media (max-width: 576px) and (min-width: 300px) {
+        .pieDiv__centrado .pieDiv__liHorarios {
+          grid-area: horarios;
+          text-align: center; } }
       .pieDiv__centrado .pieDiv__liHorarios .pieDiv__liHorarios--title {
         color: #4B5035;
         margin: auto;
@@ -553,6 +673,10 @@ main {
         text-decoration: none; }
   .pie .pieDiv__liIcon {
     flex: 1; }
+    @media (max-width: 576px) and (min-width: 300px) {
+      .pie .pieDiv__liIcon {
+        grid-area: redes;
+        text-align: center; } }
     .pie .pieDiv__liIcon ul {
       list-style-type: none;
       display: flex;
@@ -560,6 +684,12 @@ main {
       padding: 15px;
       color: #4B5035;
       justify-content: space-around; }
+      @media (max-width: 576px) and (min-width: 300px) {
+        .pie .pieDiv__liIcon ul {
+          grid-area: redes;
+          text-align: center;
+          justify-content: space-between;
+          align-items: flex-start; } }
       .pie .pieDiv__liIcon ul .pieDiv__liIcon--li {
         list-style-type: none; }
         .pie .pieDiv__liIcon ul .pieDiv__liIcon--li a {
