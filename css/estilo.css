@@ -352,6 +352,47 @@ main {
   grid-template-columns: repeat(2, 50% 50%);
   grid-template-rows: 300px 300px 300px 500px 500px;
   grid-template-areas: "aside article" "aside article"  "aside article"   "divimg divimg"  "divm divm"; }
+  @media (max-width: 576px) and (min-width: 300px) {
+    .NosotrosGrid {
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(2, 50%);
+      grid-template-rows: repeat(5, 400px);
+      grid-template-areas: "presentacion presentacion" "presentacionImg presentacionImg" "ScrolImg ScrolImg" "productos productos" "productos productos"; }
+      .NosotrosGrid .NosotrosGrid__article {
+        grid-area: presentacionImg;
+        width: 100%; }
+        .NosotrosGrid .NosotrosGrid__article h1 {
+          color: #4B5035;
+          font-family: "Great Vibes", cursive;
+          font-size: 3em;
+          padding: 0;
+          margin-right: auto;
+          margin-left: auto;
+          margin-bottom: 0px; }
+        .NosotrosGrid .NosotrosGrid__article p {
+          font-size: 1.5em;
+          margin: 30px; }
+      .NosotrosGrid .NosotrosGrid__asideMacetas {
+        grid-area: presentacion;
+        width: 100%;
+        background-size: cover;
+        background-position: right; }
+      .NosotrosGrid .NosotrosGrid__asideVelas {
+        grid-area: ScrolImg;
+        width: 100%; }
+      .NosotrosGrid .NosotrosGrid__articleProductos {
+        grid-area: productos;
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        grid-template-rows: repeat(2, 400px);
+        grid-template-areas: "prodMac prodMac" "prodVel prodVel"; }
+        .NosotrosGrid .NosotrosGrid__articleProductos .NosotrosGrid__articleProductos--macetas {
+          grid-area: prodMac;
+          width: 100%; }
+        .NosotrosGrid .NosotrosGrid__articleProductos .NosotrosGrid__articleProductos--velas {
+          grid-area: prodVel;
+          width: 100%; } }
   .NosotrosGrid__asideMacetas {
     grid-area: aside;
     background: url(../imagenes/MacetasNosotros.png);
@@ -373,14 +414,14 @@ main {
     .NosotrosGrid__article h1 {
       color: #4B5035;
       font-family: "Great Vibes", cursive;
-      font-size: 60px;
+      font-size: 2em;
       padding: 10px;
       margin: 50px; }
     .NosotrosGrid__article p {
       font-family: "Zen Loop", cursive;
       font-weight: bold;
       color: #4B5035;
-      font-size: 40px;
+      font-size: 2em;
       margin: 50px; }
   .NosotrosGrid__asideVelas {
     grid-area: divimg;

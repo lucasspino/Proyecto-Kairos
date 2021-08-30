@@ -443,6 +443,69 @@ main {
    "divimg divimg" 
    "divm divm";
 
+   @media (max-width:576px) and (min-width:300px){
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(5, 400px);
+    grid-template-areas: 
+    "presentacion presentacion"
+    "presentacionImg presentacionImg"
+    "ScrolImg ScrolImg"
+    "productos productos"
+    "productos productos";
+    
+    .NosotrosGrid__article {
+        grid-area: presentacionImg;
+        width: 100%;
+        
+        h1 {
+            color: $tercer-color;
+            font-family: $primer-fuente;
+            font-size: 3em;
+            padding: 0;
+            margin-right: auto;
+            margin-left: auto;
+            margin-bottom: 0px;
+        }
+        p { 
+            font-size: 1.5em;
+            margin: 30px;       
+        }
+    }
+    .NosotrosGrid__asideMacetas {
+        grid-area: presentacion;
+        width: 100%;
+        background-size: cover;
+        background-position:right;
+        
+    }
+    .NosotrosGrid__asideVelas {
+        grid-area: ScrolImg;
+        width: 100%;
+    }
+    
+    .NosotrosGrid__articleProductos {
+        grid-area: productos;
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        grid-template-rows: repeat(2, 400px);
+        grid-template-areas: 
+        "prodMac prodMac"
+        "prodVel prodVel";
+
+        .NosotrosGrid__articleProductos--macetas {
+            grid-area: prodMac;
+            width: 100%;
+        }
+        .NosotrosGrid__articleProductos--velas {
+            grid-area: prodVel;
+            width: 100%;
+        }
+    }
+
+    }
+
    &__asideMacetas {
     grid-area: aside;
     background: url(../imagenes/MacetasNosotros.png);
@@ -467,7 +530,7 @@ main {
         h1 {
             color: $tercer-color;
             font-family: $primer-fuente;
-            font-size: 60px;
+            font-size: 2em;
             padding: 10px;
             margin: 50px;
         }
@@ -476,7 +539,7 @@ main {
             font-family: $segunda-fuente;
             font-weight: bold;
             color: $tercer-color;
-            font-size: 40px;
+            font-size: 2em;
             margin: 50px;       
         }
     }
