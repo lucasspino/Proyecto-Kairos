@@ -99,6 +99,7 @@ html body {
 
     @media (max-width:576px) and (min-width:300px){
         width: 100%;
+        background-position: center;    
         
     }
 
@@ -145,10 +146,10 @@ main {
         grid-template-columns: repeat(2, 50%);
         grid-template-rows: repeat(5, 400px);
         grid-template-areas: 
-        "imgVelas imgVelas"
         "velasAside velasAside"
-        "imgMacetas imgMacetas"
+        "imgVelas imgVelas"
         "asideMacetas asideMacetas"
+        "imgMacetas imgMacetas"
         "cont cont";
     }
 
@@ -392,7 +393,7 @@ main {
                         resize: none;
                         @media (max-width:576px) and (min-width:300px) {
                             font-size: 12px;
-                            height: max-content;
+                            height: 100px;
                         }
                     }
                     textarea:focus {
@@ -413,7 +414,6 @@ main {
                         border: none;
                         @media (max-width:576px) and (min-width:300px) {
                             font-size: 10px;
-                            height: max-content;
                         }
                     }
                     .boton:focus {
@@ -754,25 +754,44 @@ main {
 
     @media (max-width:576px) and (min-width:300px) {
         width: 100%;
-        height: 800px;
+        height: auto;
         display: grid;
         grid-template-columns:repeat(2, 50%);
-        grid-template-rows:200px, 50px, 50px, 50px;
+        grid-template-rows: 1fr, 2fr;
         grid-template-areas:
         "klogo klogo"
-        "derecho derecho"
-        "horario horario"
-        "redes redes";
+        "texto texto";
+    
+        &Div__img {
+            grid-area: klogo;
+            text-align: center;
+        }
+
+        &Div__centrado {
+            grid-area: texto;
+            .pieDiv__title { 
+                p {
+                    margin-top: 0px;
+                }
+            }
+            .pieDiv__liHorarios{
+                .pie__lista{
+                    margin: 0%;
+                    li{
+                        text-align: center;
+                        margin-right: 50px;
+                    }
+                }
+            }
+            .pieDiv__liIcon ul li {
+                padding: 1em;
+            }
+        }
     }
 
     &Div__img {
         flex: 1;
         
-        @media (max-width:576px) and (min-width:300px) {
-            grid-area: klogo;
-            text-align: center;
-        }
-
         img {
             margin: 0;
             padding: 0;
@@ -786,38 +805,30 @@ main {
         flex: 2; 
         align-items: center; 
         justify-content: center; 
-
+        
+        
         .pieDiv__title {
             display: flex;
             flex-direction: row;
             margin-top: 15px;
             flex: 1;
-            @media (max-width:576px) and (min-width:300px) {
-                grid-area: derecho;
-                text-align: center;
-                align-self: center;
-            }
+            
+            
             
             .pie__title--title  {
                 font-family: $primer-fuente;
                 color: $tercer-color;
                 font-size: 20px; 
+                
             } 
-            .pie__title--complemento {
-                color: $tercer-color;
-                font-size: 20px;   
-            }
+            
         }
         
         .pieDiv__liHorarios {
             display: flex;
             flex-direction: column;
             flex: 2;
-            @media (max-width:576px) and (min-width:300px) {
-                grid-area: horarios;
-                text-align: center;
-                
-            }
+            
     
             .pieDiv__liHorarios--title {
                 color: $tercer-color; 
@@ -838,10 +849,7 @@ main {
     
     .pieDiv__liIcon{
         flex: 1;
-        @media (max-width:576px) and (min-width:300px) {
-            grid-area: redes;
-            text-align: center;
-        }
+        
         ul {
             list-style-type: none;
             display: flex;
@@ -849,13 +857,7 @@ main {
             padding: 15px;
             color: $tercer-color;
             justify-content: space-around;
-            @media (max-width:576px) and (min-width:300px) {
-                grid-area: redes;
-                text-align: center;
-                justify-content: space-between;
-                align-items: flex-start;
-            }
-
+            
             .pieDiv__liIcon--li {
                 list-style-type: none; 
                 

@@ -78,7 +78,8 @@ html body {
   align-items: center; }
   @media (max-width: 576px) and (min-width: 300px) {
     .divPrincipal {
-      width: 100%; } }
+      width: 100%;
+      background-position: center; } }
   .divPrincipal div {
     text-align: center; }
     .divPrincipal div a {
@@ -110,7 +111,7 @@ main {
         display: grid;
         grid-template-columns: repeat(2, 50%);
         grid-template-rows: repeat(5, 400px);
-        grid-template-areas: "imgVelas imgVelas" "velasAside velasAside" "imgMacetas imgMacetas" "asideMacetas asideMacetas" "cont cont"; } }
+        grid-template-areas: "velasAside velasAside" "imgVelas imgVelas" "asideMacetas asideMacetas" "imgMacetas imgMacetas" "cont cont"; } }
     main .divContenedor__velas--article {
       grid-area: articlev;
       height: 650px;
@@ -322,7 +323,7 @@ main {
             @media (max-width: 576px) and (min-width: 300px) {
               main .divContenedor__contacto--article .gridItem2 .gridItem__2--form textarea {
                 font-size: 12px;
-                height: max-content; } }
+                height: 100px; } }
           main .divContenedor__contacto--article .gridItem2 .gridItem__2--form textarea:focus {
             background: linear-gradient(to bottom, transparent, #878a7b);
             outline: none; }
@@ -337,8 +338,7 @@ main {
             border: none; }
             @media (max-width: 576px) and (min-width: 300px) {
               main .divContenedor__contacto--article .gridItem2 .gridItem__2--form .boton {
-                font-size: 10px;
-                height: max-content; } }
+                font-size: 10px; } }
           main .divContenedor__contacto--article .gridItem2 .gridItem__2--form .boton:focus {
             border: solid 2px #E4E4D9; }
 
@@ -615,17 +615,27 @@ main {
   @media (max-width: 576px) and (min-width: 300px) {
     .pie {
       width: 100%;
-      height: 800px;
+      height: auto;
       display: grid;
       grid-template-columns: repeat(2, 50%);
-      grid-template-rows: 200px, 50px, 50px, 50px;
-      grid-template-areas: "klogo klogo" "derecho derecho" "horario horario" "redes redes"; } }
-  .pieDiv__img {
-    flex: 1; }
-    @media (max-width: 576px) and (min-width: 300px) {
+      grid-template-rows: 1fr, 2fr;
+      grid-template-areas: "klogo klogo" "texto texto"; }
       .pieDiv__img {
         grid-area: klogo;
-        text-align: center; } }
+        text-align: center; }
+      .pieDiv__centrado {
+        grid-area: texto; }
+        .pieDiv__centrado .pieDiv__title p {
+          margin-top: 0px; }
+        .pieDiv__centrado .pieDiv__liHorarios .pie__lista {
+          margin: 0%; }
+          .pieDiv__centrado .pieDiv__liHorarios .pie__lista li {
+            text-align: center;
+            margin-right: 50px; }
+        .pieDiv__centrado .pieDiv__liIcon ul li {
+          padding: 1em; } }
+  .pieDiv__img {
+    flex: 1; }
     .pieDiv__img img {
       margin: 0;
       padding: 0;
@@ -641,26 +651,14 @@ main {
       flex-direction: row;
       margin-top: 15px;
       flex: 1; }
-      @media (max-width: 576px) and (min-width: 300px) {
-        .pieDiv__centrado .pieDiv__title {
-          grid-area: derecho;
-          text-align: center;
-          align-self: center; } }
       .pieDiv__centrado .pieDiv__title .pie__title--title {
         font-family: "Great Vibes", cursive;
-        color: #4B5035;
-        font-size: 20px; }
-      .pieDiv__centrado .pieDiv__title .pie__title--complemento {
         color: #4B5035;
         font-size: 20px; }
     .pieDiv__centrado .pieDiv__liHorarios {
       display: flex;
       flex-direction: column;
       flex: 2; }
-      @media (max-width: 576px) and (min-width: 300px) {
-        .pieDiv__centrado .pieDiv__liHorarios {
-          grid-area: horarios;
-          text-align: center; } }
       .pieDiv__centrado .pieDiv__liHorarios .pieDiv__liHorarios--title {
         color: #4B5035;
         margin: auto;
@@ -673,10 +671,6 @@ main {
         text-decoration: none; }
   .pie .pieDiv__liIcon {
     flex: 1; }
-    @media (max-width: 576px) and (min-width: 300px) {
-      .pie .pieDiv__liIcon {
-        grid-area: redes;
-        text-align: center; } }
     .pie .pieDiv__liIcon ul {
       list-style-type: none;
       display: flex;
@@ -684,12 +678,6 @@ main {
       padding: 15px;
       color: #4B5035;
       justify-content: space-around; }
-      @media (max-width: 576px) and (min-width: 300px) {
-        .pie .pieDiv__liIcon ul {
-          grid-area: redes;
-          text-align: center;
-          justify-content: space-between;
-          align-items: flex-start; } }
       .pie .pieDiv__liIcon ul .pieDiv__liIcon--li {
         list-style-type: none; }
         .pie .pieDiv__liIcon ul .pieDiv__liIcon--li a {
