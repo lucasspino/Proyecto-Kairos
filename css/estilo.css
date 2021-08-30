@@ -648,82 +648,81 @@ main {
 /* footer */
 .pie {
   background: linear-gradient(to bottom, #E4E4D9, #c4bcbb);
-  display: flex;
-  flex-direction: row;
   width: 100%;
   height: 200px;
   border-top: solid 1px #4B5035; }
-  @media (max-width: 576px) and (min-width: 300px) {
-    .pie {
-      width: 100%;
-      height: auto;
-      display: grid;
-      grid-template-columns: repeat(2, 50%);
-      grid-template-rows: 1fr, 2fr;
-      grid-template-areas: "klogo klogo" "texto texto"; }
-      .pieDiv__img {
-        grid-area: klogo;
-        text-align: center; }
-      .pieDiv__centrado {
-        grid-area: texto; }
-        .pieDiv__centrado .pieDiv__title p {
-          margin-top: 0px; }
-        .pieDiv__centrado .pieDiv__liHorarios .pie__lista {
-          margin: 0%; }
-          .pieDiv__centrado .pieDiv__liHorarios .pie__lista li {
-            text-align: center;
-            margin-right: 50px; }
-        .pieDiv__centrado .pieDiv__liIcon ul li {
-          padding: 1em; } }
-  .pieDiv__img {
-    flex: 1; }
-    .pieDiv__img img {
-      margin: 0;
-      padding: 0;
-      width: 10rem; }
-  .pieDiv__centrado {
-    display: flex;
-    flex-direction: column;
-    flex: 2;
-    align-items: center;
-    justify-content: center; }
-    .pieDiv__centrado .pieDiv__title {
-      display: flex;
-      flex-direction: row;
-      margin-top: 15px;
-      flex: 1; }
-      .pieDiv__centrado .pieDiv__title .pie__title--title {
+  .pie .pieDiv {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 100px);
+    grid-template-areas: "img derechor liicon" "img horarios liicon"; }
+    .pie .pieDiv__img {
+      grid-area: img;
+      text-align: center; }
+      .pie .pieDiv__img img {
+        width: 10rem;
+        margin: 20px; }
+    .pie .pieDiv__title {
+      grid-area: derechor; }
+      .pie .pieDiv__title p {
+        text-align: center;
+        line-height: 100px;
         font-family: "Great Vibes", cursive;
         color: #4B5035;
         font-size: 20px; }
-    .pieDiv__centrado .pieDiv__liHorarios {
-      display: flex;
-      flex-direction: column;
-      flex: 2; }
-      .pieDiv__centrado .pieDiv__liHorarios .pieDiv__liHorarios--title {
+    .pie .pieDiv__liHorarios {
+      grid-area: horarios; }
+      .pie .pieDiv__liHorarios h3 {
+        text-align: center;
         color: #4B5035;
-        margin: auto;
-        padding: 0%;
-        justify-content: center; }
-      .pieDiv__centrado .pieDiv__liHorarios .pie__lista li {
-        color: #4B5035;
-        font-family: "Zen Loop", cursive;
-        list-style-type: none;
-        text-decoration: none; }
-  .pie .pieDiv__liIcon {
-    flex: 1; }
-    .pie .pieDiv__liIcon ul {
-      list-style-type: none;
-      display: flex;
-      flex-direction: row;
-      padding: 15px;
-      color: #4B5035;
-      justify-content: space-around; }
-      .pie .pieDiv__liIcon ul .pieDiv__liIcon--li {
-        list-style-type: none; }
-        .pie .pieDiv__liIcon ul .pieDiv__liIcon--li a {
-          text-decoration: none;
-          font-size: 2rem;
+        margin: 0%; }
+      .pie .pieDiv__liHorarios .pie__lista {
+        text-align: center; }
+        .pie .pieDiv__liHorarios .pie__lista li {
           color: #4B5035;
-          display: flex;
-          flex-direction: row; }
+          font-family: "Zen Loop", cursive;
+          list-style-type: none;
+          text-decoration: none;
+          margin-right: 50px; }
+    .pie .pieDiv__liIcon {
+      grid-area: liicon; }
+      .pie .pieDiv__liIcon ul {
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        color: #4B5035;
+        justify-content: space-around;
+        margin: 50px; }
+        .pie .pieDiv__liIcon ul .pieDiv__liIcon--li {
+          list-style-type: none; }
+          .pie .pieDiv__liIcon ul .pieDiv__liIcon--li a {
+            text-decoration: none;
+            font-size: 2rem;
+            color: #4B5035; }
+  @media (max-width: 576px) and (min-width: 300px) {
+    .pie {
+      height: auto; }
+      .pie .pieDiv {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        grid-template-rows: 100px, 50px, 100px, 50px;
+        grid-template-areas: "imgP imgP" "titleP titleP" "liHp liHp" "liIc liIc"; }
+        .pie .pieDiv .pieDiv__img {
+          grid-area: imgP; }
+          .pie .pieDiv .pieDiv__img img {
+            margin: 0px; }
+        .pie .pieDiv .pieDiv__title {
+          grid-area: titleP; }
+          .pie .pieDiv .pieDiv__title p {
+            font-size: 20px; }
+        .pie .pieDiv .pieDiv__liHorarios {
+          grid-area: liHp; }
+        .pie .pieDiv .pieDiv__liIcon {
+          grid-area: liIc; }
+          .pie .pieDiv .pieDiv__liIcon ul {
+            margin: 10px;
+            margin-right: 50px; } }
