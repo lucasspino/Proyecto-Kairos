@@ -311,18 +311,6 @@ main {
                 transform: scale(110%, 110%);
                 transition: 2.3s;
             }
-
-            /* .gridItem__1 {
-                grid-area: map;
-                align-self: center;
-                justify-self: center;
-                margin: 3vh;
-                width: 95%;
-                height: 90%;
-
-                
-            }*/
-             
             .gridItem2 {
                 grid-area: formulario;
                 @include contactoGridItem ();
