@@ -436,12 +436,12 @@ main {
     display: grid;
     grid-template-columns: repeat(2, 50% 50%);
     grid-template-rows: 300px 300px 300px 500px 500px;
-   grid-template-areas: 
-   "aside article"
-   "aside article" 
-   "aside article"  
-   "divimg divimg" 
-   "divm divm";
+    grid-template-areas: 
+    "aside article"
+    "aside article" 
+    "aside article"  
+    "divimg divimg" 
+    "divm divm";
 
    @media (max-width:576px) and (min-width:300px){
     width: 100%;
@@ -801,8 +801,46 @@ main {
                 border:solid 2px $primer-color ;
             } 
         }
-    }    
-}
+    }   
+    @media (max-width:576px) and (min-width:300px){
+        .ContenedorSeccionContacto__divGrid {
+            display: grid;
+            grid-template-columns: repeat(2, 50%);
+            grid-template-rows: 400px 250px;
+            grid-template-areas:
+            "forM forM"
+            "maP maP";
+            .ContenedorSeccionContacto__divGrid--gridItem__1 {
+                grid-area: maP;
+            }
+            .ContenedorSeccionContacto__divGrid--gridItem__2 {
+                grid-area: forM;
+    
+                &--form {
+                    legend {
+                        font-size: 20px;
+                    }
+                    label {
+                        font-size: 10px;
+                    }
+                    select {
+                        font-size: 12px;
+                    }
+                    input {
+                        font-size: 10px;
+                    }
+                    textarea {
+                        font-size: 10px;
+                    }
+                    .boton {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    } 
+}  
+
 
 /* footer */
 
@@ -810,7 +848,7 @@ main {
     background: linear-gradient(to bottom, $primer-color, $segundo-color);
     width: 100%;
     height: 200px;   
-    border-top: solid 1px $tercer-color;
+    border-top: solid 1px #4b503544;
 
     .pieDiv {
         width: 85%;

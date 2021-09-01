@@ -644,13 +644,35 @@ main {
         border: none; }
       .ContenedorSeccionContacto .ContenedorSeccionContacto__divGrid--gridItem__2--form .boton:focus {
         border: solid 2px #E4E4D9; }
+  @media (max-width: 576px) and (min-width: 300px) {
+    .ContenedorSeccionContacto .ContenedorSeccionContacto__divGrid {
+      display: grid;
+      grid-template-columns: repeat(2, 50%);
+      grid-template-rows: 400px 250px;
+      grid-template-areas: "forM forM" "maP maP"; }
+      .ContenedorSeccionContacto .ContenedorSeccionContacto__divGrid .ContenedorSeccionContacto__divGrid--gridItem__1 {
+        grid-area: maP; }
+      .ContenedorSeccionContacto .ContenedorSeccionContacto__divGrid .ContenedorSeccionContacto__divGrid--gridItem__2 {
+        grid-area: forM; }
+        .ContenedorSeccionContacto .ContenedorSeccionContacto__divGrid .ContenedorSeccionContacto__divGrid--gridItem__2--form legend {
+          font-size: 20px; }
+        .ContenedorSeccionContacto .ContenedorSeccionContacto__divGrid .ContenedorSeccionContacto__divGrid--gridItem__2--form label {
+          font-size: 10px; }
+        .ContenedorSeccionContacto .ContenedorSeccionContacto__divGrid .ContenedorSeccionContacto__divGrid--gridItem__2--form select {
+          font-size: 12px; }
+        .ContenedorSeccionContacto .ContenedorSeccionContacto__divGrid .ContenedorSeccionContacto__divGrid--gridItem__2--form input {
+          font-size: 10px; }
+        .ContenedorSeccionContacto .ContenedorSeccionContacto__divGrid .ContenedorSeccionContacto__divGrid--gridItem__2--form textarea {
+          font-size: 10px; }
+        .ContenedorSeccionContacto .ContenedorSeccionContacto__divGrid .ContenedorSeccionContacto__divGrid--gridItem__2--form .boton {
+          font-size: 12px; } }
 
 /* footer */
 .pie {
   background: linear-gradient(to bottom, #E4E4D9, #c4bcbb);
   width: 100%;
   height: 200px;
-  border-top: solid 1px #4B5035; }
+  border-top: solid 1px #4b503544; }
   .pie .pieDiv {
     width: 85%;
     margin-left: auto;
