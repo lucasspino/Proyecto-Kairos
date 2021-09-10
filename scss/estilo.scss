@@ -20,7 +20,7 @@ html body {
     justify-content: center;
     flex-wrap: wrap;
 
-    @media (max-width:576px) and (min-width:300px){
+    @media (max-width:750px) and (min-width:300px){
     width: 100%;
     height: 5rem;
     display: flex;
@@ -48,7 +48,7 @@ html body {
             margin: 10px;
             align-items: center; 
 
-            @media (max-width:576px) and (min-width:300px){
+            @media (max-width:750px) and (min-width:300px){
                 margin: 0;
                 padding: 1px;
             }
@@ -59,6 +59,9 @@ html body {
 
                 @media (max-width:576px) and (min-width:300px){
                     display: none;
+                }
+                @media (max-width:750px) and (min-width:576px){
+                    font-size: 18px;
                 }
             }
             a {
@@ -73,6 +76,9 @@ html body {
                     font-weight: bolder;
                     align-items: center;
                 } 
+                @media (max-width:750px) and (min-width:576px){
+                    font-size: 15px;
+                }
             }
        }
     }
@@ -102,6 +108,11 @@ html body {
         background-position: center;    
         
     }
+    @media (max-width:750px) and (min-width:576px){
+        width: 100%;
+        background-position: center;
+        height: 400px;
+    }
 
     div {
         text-align: center;
@@ -113,11 +124,19 @@ html body {
             color: $primer-color;
             font-family: $primer-fuente;
             font-size: 60px;
+            @media (max-width:750px) and (min-width:576px){
+                font-size: 50px;
+            }
         }
         .nosotros__parrafo {
             font-family: $segunda-fuente;
             font-size: 30px;
             color: $primer-color;
+            @media (max-width:750px) and (min-width:576px){
+                font-size: 30px;
+                margin-right:30px;
+                margin-left: 30px;
+            }
         }
     }
 }
@@ -128,9 +147,10 @@ main {
     margin-right: auto;
     background: linear-gradient(to bottom, $segundo-color, $primer-color); 
 
-    @media (max-width:576px) and (min-width:300px){
+    @media (max-width:750px) and (min-width:300px){
         width: 100%;     
     }
+    
 
     .divContenedor {
         display: grid;
@@ -141,17 +161,17 @@ main {
        "articlem asidem" 
        "articlec articlec";
 
-       @media (max-width:576px) and (min-width:300px){
-        display: grid;
-        grid-template-columns: repeat(2, 50%);
-        grid-template-rows: repeat(5, 400px);
-        grid-template-areas: 
-        "velasAside velasAside"
-        "imgVelas imgVelas"
-        "asideMacetas asideMacetas"
-        "imgMacetas imgMacetas"
-        "cont cont";
-    }
+       @media (max-width:750px) and (min-width:300px){
+            display: grid;
+            grid-template-columns: repeat(2, 50%);
+            grid-template-rows: repeat(5, 400px);
+            grid-template-areas: 
+            "velasAside velasAside"
+            "imgVelas imgVelas"
+            "asideMacetas asideMacetas"
+            "imgMacetas imgMacetas"
+            "cont cont";
+        }
 
        &__velas--article {
         grid-area: articlev;
@@ -161,7 +181,7 @@ main {
         box-sizing: border-box;
         border-bottom: solid 1px $tercer-color;
 
-        @media (max-width:576px) and (min-width:300px) {
+        @media (max-width:750px) and (min-width:300px) {
             grid-area: imgVelas;
             height: 100%;
         }
@@ -171,7 +191,7 @@ main {
         grid-area: asidev;
         background: linear-gradient(to bottom,$segundo-color, $primer-color);
         
-        @media (max-width:576px) and (min-width:300px) {
+        @media (max-width:750px) and (min-width:300px) {
             grid-area: velasAside;
             height: 100%;
         }
@@ -183,7 +203,7 @@ main {
                 box-sizing: border-box;
                 margin: 50px;
 
-                @media (max-width:576px) and (min-width:300px) {
+                @media (max-width:750px) and (min-width:300px) {
                     margin: 5px; 
                 }
 
@@ -194,6 +214,9 @@ main {
                     @media (max-width:576px) and (min-width:300px) {
                         font-size: 30px;
                     }
+                    @media (max-width:750px) and (min-width:576px) {
+                        font-size: 50px;
+                    }
                 }
                 p {
                     font-family: $segunda-fuente;
@@ -203,12 +226,17 @@ main {
                     @media (max-width:576px) and (min-width:300px) {
                         font-size: 20px;
                     }
+                    @media (max-width:750px) and (min-width:576px) {
+                        font-size: 25px;
+                        margin-right: 30px;
+                        margin-left: 30px;
+                    }
                 }
                 a {
                     font-family: $tercera-fuente;
                     color: $tercer-color;
                     font-size: 30px;
-                    @media (max-width:576px) and (min-width:300px) {
+                    @media (max-width:750px) and (min-width:300px) {
                         font-size: 15px;
                     }
                 }
@@ -227,6 +255,11 @@ main {
                 border-top: solid 1px $tercer-color;
                 border-bottom: solid 1px $tercer-color;
             }
+            @media (max-width:750px) and (min-width:576px) {
+                grid-area: imgMacetas;
+                border-top: solid 1px $tercer-color;
+                border-bottom: solid 1px $tercer-color;
+            }
 
         }
     
@@ -234,7 +267,7 @@ main {
             grid-area: articlem;
             background: linear-gradient(to bottom, $primer-color, $segundo-color);
            
-            @media (max-width:576px) and (min-width:300px) {
+            @media (max-width:750px) and (min-width:300px) {
                 grid-area: asideMacetas;
                 height: 100%;
             }
@@ -254,6 +287,9 @@ main {
                     @media (max-width:576px) and (min-width:300px) {
                         font-size: 30px;
                     }
+                    @media (max-width:750px) and (min-width:576px) {
+                        font-size: 50px;
+                    }
                 }
 
                 p {
@@ -265,6 +301,11 @@ main {
                     @media (max-width:576px) and (min-width:300px) {
                         font-size: 20px;
                     }
+                    @media (max-width:750px) and (min-width:576px) {
+                        font-size: 30px;
+                        margin-right: 30px;
+                        margin-left: 30px;
+                    }
                 }
 
                 a {
@@ -273,6 +314,9 @@ main {
                     font-size: 30px;
 
                     @media (max-width:576px) and (min-width:300px) {
+                        font-size: 15px;
+                    }
+                    @media (max-width:750px) and (min-width:576px) {
                         font-size: 15px;
                     }
                 }
@@ -285,11 +329,10 @@ main {
             align-items: center;
             flex-wrap: wrap;
             background: linear-gradient(to bottom, $segundo-color, $primer-color);
-            @media (max-width:576px) and (min-width:300px) {
+            @media (max-width:750px) and (min-width:300px) {
                 grid-area: cont;
                 height: 100%;
             }
-            
 
             &--div {
                 width: 85%;
@@ -325,7 +368,11 @@ main {
                         color: #ffff;
                         @media (max-width:576px) and (min-width:300px) {
                             font-size: 20px;
-                        } 
+                        }
+                        @media (max-width:750px) and (min-width:576px) {
+                            font-size: 30px;
+                        }
+                         
                     }
                     label {
                         font-size: 20px;
@@ -334,6 +381,9 @@ main {
                         @media (max-width:576px) and (min-width:300px) {
                             font-size: 12px;
                             height: max-content;
+                        }
+                        @media (max-width:750px) and (min-width:576px) {
+                            font-size: 18px;
                         }
                     }
                     select {
@@ -349,6 +399,9 @@ main {
                         @media (max-width:576px) and (min-width:300px) {
                             font-size: 10px;
                         }
+                        @media (max-width:750px) and (min-width:576px) {
+                            font-size: 13px;
+                        }
                     }
                     input {
                         width: 85%;
@@ -361,7 +414,7 @@ main {
                         font-size: 18px;
                         color: #ffff;
                         font-weight: bold;
-                        @media (max-width:576px) and (min-width:300px) {
+                        @media (max-width:750px) and (min-width:300px) {
                             font-size: 12px;
                         }
                     }
@@ -383,6 +436,10 @@ main {
                             font-size: 12px;
                             height: 100px;
                         }
+                        @media (max-width:750px) and (min-width:576px) {
+                            font-size: 12px;
+                            height: 90px;
+                        }
                     }
                     textarea:focus {
                         background: linear-gradient(to bottom, transparent,#878a7b);
@@ -390,7 +447,7 @@ main {
                     }
 
                     div {
-                        @media (max-width:576px) and (min-width:300px) {
+                        @media (max-width:750px) and (min-width:300px) {
                             display: none;
                         }
                     }
@@ -402,6 +459,9 @@ main {
                         border: none;
                         @media (max-width:576px) and (min-width:300px) {
                             font-size: 10px;
+                        }
+                        @media (max-width:750px) and (min-width:576px) {
+                            font-size: 12px;
                         }
                     }
                     .boton:focus {
@@ -431,69 +491,67 @@ main {
     "divimg divimg" 
     "divm divm";
 
-   @media (max-width:576px) and (min-width:300px){
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(2, 50%);
-    grid-template-rows: repeat(5, 400px);
-    grid-template-areas: 
-    "presentacion presentacion"
-    "presentacionImg presentacionImg"
-    "ScrolImg ScrolImg"
-    "productos productos"
-    "productos productos";
-    
-    .NosotrosGrid__article {
-        grid-area: presentacionImg;
+   @media (max-width:750px) and (min-width:300px){
         width: 100%;
-        
-        h1 {
-            color: $tercer-color;
-            font-family: $primer-fuente;
-            font-size: 3em;
-            padding: 0;
-            margin-right: auto;
-            margin-left: auto;
-            margin-bottom: 0px;
-        }
-        p { 
-            font-size: 1.5em;
-            margin: 30px;       
-        }
-    }
-    .NosotrosGrid__asideMacetas {
-        grid-area: presentacion;
-        width: 100%;
-        background-size: cover;
-        background-position:right;
-        
-    }
-    .NosotrosGrid__asideVelas {
-        grid-area: ScrolImg;
-        width: 100%;
-    }
-    
-    .NosotrosGrid__articleProductos {
-        grid-area: productos;
         display: grid;
         grid-template-columns: repeat(2, 50%);
-        grid-template-rows: repeat(2, 400px);
+        grid-template-rows: repeat(5, 400px);
         grid-template-areas: 
-        "prodMac prodMac"
-        "prodVel prodVel";
-
-        .NosotrosGrid__articleProductos--macetas {
-            grid-area: prodMac;
+        "presentacion presentacion"
+        "presentacionImg presentacionImg"
+        "ScrolImg ScrolImg"
+        "productos productos"
+        "productos productos";
+    
+        .NosotrosGrid__article {
+            grid-area: presentacionImg;
+            width: 100%;
+            
+            h1 {
+                color: $tercer-color;
+                font-family: $primer-fuente;
+                font-size: 3em;
+                padding: 0;
+                margin-right: auto;
+                margin-left: auto;
+                margin-bottom: 0px;
+            }
+            p { 
+                font-size: 1.5em;
+                margin: 30px;       
+            }
+        }
+        .NosotrosGrid__asideMacetas {
+            grid-area: presentacion;
+            width: 100%;
+            background-size: cover;
+            background-position:right;
+            
+        }
+        .NosotrosGrid__asideVelas {
+            grid-area: ScrolImg;
             width: 100%;
         }
-        .NosotrosGrid__articleProductos--velas {
-            grid-area: prodVel;
-            width: 100%;
+        
+        .NosotrosGrid__articleProductos {
+            grid-area: productos;
+            display: grid;
+            grid-template-columns: repeat(2, 50%);
+            grid-template-rows: repeat(2, 400px);
+            grid-template-areas: 
+            "prodMac prodMac"
+            "prodVel prodVel";
+
+            .NosotrosGrid__articleProductos--macetas {
+                grid-area: prodMac;
+                width: 100%;
+            }
+            .NosotrosGrid__articleProductos--velas {
+                grid-area: prodVel;
+                width: 100%;
+            }
         }
     }
-
-    }
-
    &__asideMacetas {
     grid-area: aside;
     background: url(../imagenes/MacetasNosotros.png);
@@ -623,6 +681,9 @@ main {
 .container {
     width: 80%;
     margin-top: 2vh;
+    @media (max-width:750px) and (min-width:576px){
+        margin-top: 50px;
+    }
 
     .col-md-4 {
         padding-bottom: 10px;
@@ -630,6 +691,12 @@ main {
         .img-thumbnail {
             background-color: transparent;
             border: 1px solid $tercer-color;
+            @media (max-width:750px) and (min-width:576px){
+                width: 250px;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
         }
 
         aside {
@@ -790,7 +857,7 @@ main {
             } 
         }
     }   
-    @media (max-width:576px) and (min-width:300px){
+    @media (max-width:750px) and (min-width:300px){
         .ContenedorSeccionContacto__divGrid {
             display: grid;
             grid-template-columns: repeat(2, 50%);
@@ -910,7 +977,7 @@ main {
             }
         }
     }
-    @media (max-width:576px) and (min-width:300px) {
+    @media (max-width:750px) and (min-width:300px) {
         height: auto;
         .pieDiv {
             width: 100%;
