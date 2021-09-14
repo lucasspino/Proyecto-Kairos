@@ -17,7 +17,7 @@ html body {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap; }
-  @media (max-width: 750px) and (min-width: 300px) {
+  @media (max-width: 812px) and (min-width: 300px) {
     .navContenedor {
       width: 100%;
       height: 5rem;
@@ -34,11 +34,12 @@ html body {
     flex-direction: row;
     padding: 15px;
     color: #4B5035;
-    margin: auto; }
+    margin-top: auto;
+    margin-bottom: auto; }
     .navContenedor__lista--item {
       margin: 10px;
       align-items: center; }
-      @media (max-width: 750px) and (min-width: 300px) {
+      @media (max-width: 812px) and (min-width: 300px) {
         .navContenedor__lista--item {
           margin: 0;
           padding: 1px; } }
@@ -48,7 +49,7 @@ html body {
         @media (max-width: 576px) and (min-width: 300px) {
           .navContenedor__lista--item i {
             display: none; } }
-        @media (max-width: 750px) and (min-width: 576px) {
+        @media (max-width: 812px) and (min-width: 576px) {
           .navContenedor__lista--item i {
             font-size: 18px; } }
       .navContenedor__lista--item a {
@@ -62,7 +63,7 @@ html body {
             font-size: 11px;
             font-weight: bolder;
             align-items: center; } }
-        @media (max-width: 750px) and (min-width: 576px) {
+        @media (max-width: 812px) and (min-width: 576px) {
           .navContenedor__lista--item a {
             font-size: 15px; } }
 
@@ -87,7 +88,7 @@ html body {
     .divPrincipal {
       width: 100%;
       background-position: center; } }
-  @media (max-width: 750px) and (min-width: 576px) {
+  @media (max-width: 812px) and (min-width: 576px) {
     .divPrincipal {
       width: 100%;
       background-position: center;
@@ -100,14 +101,14 @@ html body {
       color: #E4E4D9;
       font-family: "Great Vibes", cursive;
       font-size: 60px; }
-      @media (max-width: 750px) and (min-width: 576px) {
+      @media (max-width: 812px) and (min-width: 576px) {
         .divPrincipal div .divPrincipal__title {
           font-size: 50px; } }
     .divPrincipal div .nosotros__parrafo {
       font-family: "Zen Loop", cursive;
       font-size: 30px;
       color: #E4E4D9; }
-      @media (max-width: 750px) and (min-width: 576px) {
+      @media (max-width: 812px) and (min-width: 576px) {
         .divPrincipal div .nosotros__parrafo {
           font-size: 30px;
           margin-right: 30px;
@@ -118,7 +119,7 @@ main {
   margin-left: auto;
   margin-right: auto;
   background: linear-gradient(to bottom, #c4bcbb, #E4E4D9); }
-  @media (max-width: 750px) and (min-width: 300px) {
+  @media (max-width: 812px) and (min-width: 300px) {
     main {
       width: 100%; } }
   main .divContenedor {
@@ -126,7 +127,7 @@ main {
     grid-template-columns: repeat(2, 50% 50%);
     grid-template-rows: repeat(3, 650px);
     grid-template-areas: "articlev asidev"  "articlem asidem"  "articlec articlec"; }
-    @media (max-width: 750px) and (min-width: 300px) {
+    @media (max-width: 812px) and (min-width: 300px) {
       main .divContenedor {
         display: grid;
         grid-template-columns: repeat(2, 50%);
@@ -139,7 +140,7 @@ main {
       background-size: cover;
       box-sizing: border-box;
       border-bottom: solid 1px #4B5035; }
-      @media (max-width: 750px) and (min-width: 300px) {
+      @media (max-width: 812px) and (min-width: 300px) {
         main .divContenedor__velas--article {
           grid-area: imgVelas;
           height: 100%; } }
@@ -153,7 +154,7 @@ main {
       align-items: center;
       justify-content: center;
       height: 650px; }
-      @media (max-width: 750px) and (min-width: 300px) {
+      @media (max-width: 812px) and (min-width: 300px) {
         main .divContenedor__velas--aside {
           grid-area: velasAside;
           height: 100%; } }
@@ -161,7 +162,7 @@ main {
         align-items: start;
         box-sizing: border-box;
         margin: 50px; }
-        @media (max-width: 750px) and (min-width: 300px) {
+        @media (max-width: 812px) and (min-width: 300px) {
           main .divContenedor__velas--aside div {
             margin: 5px; } }
         main .divContenedor__velas--aside div h2 {
@@ -171,7 +172,7 @@ main {
           @media (max-width: 576px) and (min-width: 300px) {
             main .divContenedor__velas--aside div h2 {
               font-size: 30px; } }
-          @media (max-width: 750px) and (min-width: 576px) {
+          @media (max-width: 812px) and (min-width: 576px) {
             main .divContenedor__velas--aside div h2 {
               font-size: 50px; } }
         main .divContenedor__velas--aside div p {
@@ -182,7 +183,7 @@ main {
           @media (max-width: 576px) and (min-width: 300px) {
             main .divContenedor__velas--aside div p {
               font-size: 20px; } }
-          @media (max-width: 750px) and (min-width: 576px) {
+          @media (max-width: 812px) and (min-width: 576px) {
             main .divContenedor__velas--aside div p {
               font-size: 25px;
               margin-right: 30px;
@@ -191,7 +192,7 @@ main {
           font-family: Arial, Helvetica, sans-serif;
           color: #4B5035;
           font-size: 30px; }
-          @media (max-width: 750px) and (min-width: 300px) {
+          @media (max-width: 812px) and (min-width: 300px) {
             main .divContenedor__velas--aside div a {
               font-size: 15px; } }
     main .divContenedor__macetas--article {
@@ -206,7 +207,7 @@ main {
           grid-area: imgMacetas;
           border-top: solid 1px #4B5035;
           border-bottom: solid 1px #4B5035; } }
-      @media (max-width: 750px) and (min-width: 576px) {
+      @media (max-width: 812px) and (min-width: 576px) {
         main .divContenedor__macetas--article {
           grid-area: imgMacetas;
           border-top: solid 1px #4B5035;
@@ -221,7 +222,7 @@ main {
       align-items: center;
       justify-content: center;
       height: 650px; }
-      @media (max-width: 750px) and (min-width: 300px) {
+      @media (max-width: 812px) and (min-width: 300px) {
         main .divContenedor__macetas--aside {
           grid-area: asideMacetas;
           height: 100%; } }
@@ -236,7 +237,7 @@ main {
           @media (max-width: 576px) and (min-width: 300px) {
             main .divContenedor__macetas--aside div h2 {
               font-size: 30px; } }
-          @media (max-width: 750px) and (min-width: 576px) {
+          @media (max-width: 812px) and (min-width: 576px) {
             main .divContenedor__macetas--aside div h2 {
               font-size: 50px; } }
         main .divContenedor__macetas--aside div p {
@@ -247,7 +248,7 @@ main {
           @media (max-width: 576px) and (min-width: 300px) {
             main .divContenedor__macetas--aside div p {
               font-size: 20px; } }
-          @media (max-width: 750px) and (min-width: 576px) {
+          @media (max-width: 812px) and (min-width: 576px) {
             main .divContenedor__macetas--aside div p {
               font-size: 30px;
               margin-right: 30px;
@@ -259,7 +260,7 @@ main {
           @media (max-width: 576px) and (min-width: 300px) {
             main .divContenedor__macetas--aside div a {
               font-size: 15px; } }
-          @media (max-width: 750px) and (min-width: 576px) {
+          @media (max-width: 812px) and (min-width: 576px) {
             main .divContenedor__macetas--aside div a {
               font-size: 15px; } }
     main .divContenedor__contacto--article {
@@ -269,7 +270,7 @@ main {
       align-items: center;
       flex-wrap: wrap;
       background: linear-gradient(to bottom, #c4bcbb, #E4E4D9); }
-      @media (max-width: 750px) and (min-width: 300px) {
+      @media (max-width: 812px) and (min-width: 300px) {
         main .divContenedor__contacto--article {
           grid-area: cont;
           height: 100%; } }
@@ -306,7 +307,7 @@ main {
             @media (max-width: 576px) and (min-width: 300px) {
               main .divContenedor__contacto--article .gridItem2 .gridItem__2--form legend {
                 font-size: 20px; } }
-            @media (max-width: 750px) and (min-width: 576px) {
+            @media (max-width: 812px) and (min-width: 576px) {
               main .divContenedor__contacto--article .gridItem2 .gridItem__2--form legend {
                 font-size: 30px; } }
           main .divContenedor__contacto--article .gridItem2 .gridItem__2--form label {
@@ -317,7 +318,7 @@ main {
               main .divContenedor__contacto--article .gridItem2 .gridItem__2--form label {
                 font-size: 12px;
                 height: max-content; } }
-            @media (max-width: 750px) and (min-width: 576px) {
+            @media (max-width: 812px) and (min-width: 576px) {
               main .divContenedor__contacto--article .gridItem2 .gridItem__2--form label {
                 font-size: 18px; } }
           main .divContenedor__contacto--article .gridItem2 .gridItem__2--form select {
@@ -333,7 +334,7 @@ main {
             @media (max-width: 576px) and (min-width: 300px) {
               main .divContenedor__contacto--article .gridItem2 .gridItem__2--form select {
                 font-size: 10px; } }
-            @media (max-width: 750px) and (min-width: 576px) {
+            @media (max-width: 812px) and (min-width: 576px) {
               main .divContenedor__contacto--article .gridItem2 .gridItem__2--form select {
                 font-size: 13px; } }
           main .divContenedor__contacto--article .gridItem2 .gridItem__2--form input {
@@ -347,7 +348,7 @@ main {
             font-size: 18px;
             color: #ffff;
             font-weight: bold; }
-            @media (max-width: 750px) and (min-width: 300px) {
+            @media (max-width: 812px) and (min-width: 300px) {
               main .divContenedor__contacto--article .gridItem2 .gridItem__2--form input {
                 font-size: 12px; } }
           main .divContenedor__contacto--article .gridItem2 .gridItem__2--form input:focus {
@@ -367,14 +368,14 @@ main {
               main .divContenedor__contacto--article .gridItem2 .gridItem__2--form textarea {
                 font-size: 12px;
                 height: 100px; } }
-            @media (max-width: 750px) and (min-width: 576px) {
+            @media (max-width: 812px) and (min-width: 576px) {
               main .divContenedor__contacto--article .gridItem2 .gridItem__2--form textarea {
                 font-size: 12px;
                 height: 90px; } }
           main .divContenedor__contacto--article .gridItem2 .gridItem__2--form textarea:focus {
             background: linear-gradient(to bottom, transparent, #878a7b);
             outline: none; }
-          @media (max-width: 750px) and (min-width: 300px) {
+          @media (max-width: 812px) and (min-width: 300px) {
             main .divContenedor__contacto--article .gridItem2 .gridItem__2--form div {
               display: none; } }
           main .divContenedor__contacto--article .gridItem2 .gridItem__2--form .boton {
@@ -386,7 +387,7 @@ main {
             @media (max-width: 576px) and (min-width: 300px) {
               main .divContenedor__contacto--article .gridItem2 .gridItem__2--form .boton {
                 font-size: 10px; } }
-            @media (max-width: 750px) and (min-width: 576px) {
+            @media (max-width: 812px) and (min-width: 576px) {
               main .divContenedor__contacto--article .gridItem2 .gridItem__2--form .boton {
                 font-size: 12px; } }
           main .divContenedor__contacto--article .gridItem2 .gridItem__2--form .boton:focus {
@@ -402,7 +403,7 @@ main {
   grid-template-columns: repeat(2, 50% 50%);
   grid-template-rows: 300px 300px 300px 500px 500px;
   grid-template-areas: "aside article" "aside article"  "aside article"   "divimg divimg"  "divm divm"; }
-  @media (max-width: 750px) and (min-width: 300px) {
+  @media (max-width: 812px) and (min-width: 300px) {
     .NosotrosGrid {
       width: 100%;
       display: grid;
@@ -556,7 +557,7 @@ main {
 .container {
   width: 80%;
   margin-top: 2vh; }
-  @media (max-width: 750px) and (min-width: 576px) {
+  @media (max-width: 812px) and (min-width: 576px) {
     .container {
       margin-top: 50px; } }
   .container .col-md-4 {
@@ -564,7 +565,7 @@ main {
     .container .col-md-4 .img-thumbnail {
       background-color: transparent;
       border: 1px solid #4B5035; }
-      @media (max-width: 750px) and (min-width: 576px) {
+      @media (max-width: 812px) and (min-width: 576px) {
         .container .col-md-4 .img-thumbnail {
           width: 250px;
           display: block;
@@ -703,7 +704,7 @@ main {
         border: none; }
       .ContenedorSeccionContacto .ContenedorSeccionContacto__divGrid--gridItem__2--form .boton:focus {
         border: solid 2px #E4E4D9; }
-  @media (max-width: 750px) and (min-width: 300px) {
+  @media (max-width: 812px) and (min-width: 300px) {
     .ContenedorSeccionContacto .ContenedorSeccionContacto__divGrid {
       display: grid;
       grid-template-columns: repeat(2, 50%);
@@ -783,7 +784,7 @@ main {
             text-decoration: none;
             font-size: 2rem;
             color: #4B5035; }
-  @media (max-width: 750px) and (min-width: 300px) {
+  @media (max-width: 812px) and (min-width: 300px) {
     .pie {
       height: auto; }
       .pie .pieDiv {
