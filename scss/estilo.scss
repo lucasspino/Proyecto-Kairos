@@ -446,20 +446,17 @@ main {
                         background: linear-gradient(to bottom, transparent,#878a7b);
                         outline: none;
                     }
-
-                    div {
-                        @media (max-width:812px) and (min-width:300px) {
-                            display: none;
-                        }
-                    }
                     .boton {
                         width: 85%;
+                        height: 25px;
+                        margin-top: 40px;
                         background: linear-gradient(to bottom, $segundo-color, $primer-color);
                         font-size: 15px;
                         font-family: $segunda-fuente;
                         border: none;
                         @media (max-width:576px) and (min-width:300px) {
                             font-size: 10px;
+                            margin-top: 10px;
                         }
                         @media (max-width:812px) and (min-width:576px) {
                             font-size: 12px;

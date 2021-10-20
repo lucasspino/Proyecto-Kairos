@@ -375,18 +375,18 @@ main {
           main .divContenedor__contacto--article .gridItem2 .gridItem__2--form textarea:focus {
             background: linear-gradient(to bottom, transparent, #878a7b);
             outline: none; }
-          @media (max-width: 812px) and (min-width: 300px) {
-            main .divContenedor__contacto--article .gridItem2 .gridItem__2--form div {
-              display: none; } }
           main .divContenedor__contacto--article .gridItem2 .gridItem__2--form .boton {
             width: 85%;
+            height: 25px;
+            margin-top: 40px;
             background: linear-gradient(to bottom, #c4bcbb, #E4E4D9);
             font-size: 15px;
             font-family: "Zen Loop", cursive;
             border: none; }
             @media (max-width: 576px) and (min-width: 300px) {
               main .divContenedor__contacto--article .gridItem2 .gridItem__2--form .boton {
-                font-size: 10px; } }
+                font-size: 10px;
+                margin-top: 10px; } }
             @media (max-width: 812px) and (min-width: 576px) {
               main .divContenedor__contacto--article .gridItem2 .gridItem__2--form .boton {
                 font-size: 12px; } }
