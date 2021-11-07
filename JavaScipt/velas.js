@@ -1,8 +1,6 @@
-alert('Selecciona un producto. Cuando termines ingresa "Salir"');
-
-let prod = prompt('1)Kaidrá 2)Avavác 3)Polygono 4)Trigonikí Sfaíra 5)Strongyló 6)Trígono 7)Pyramída 8)Salir');
-
 const carrito = [];
+
+const productos = []; 
 
 class Producto {
 
@@ -20,7 +18,8 @@ class Producto {
 }
 
 const create = (articulo) => {
-    carrito.push(articulo);  
+    carrito.push(articulo);
+     
 }
 
 for (const producto of carrito){
@@ -31,48 +30,31 @@ const getAll = () => {
     return carrito;
 } 
 
+const productosAgregar = document.querySelectorAll(".btnId");
 
-let producto1 = new Producto ("Amanecer", 1, 550, "1");
-let producto2 = new Producto ("Hexagonal", 1, 480, "2");
-let producto3 = new Producto ("Bombones", 1, 400, "3");
+const Bombones = document.getElementById("bombones");
+const Hexagonal = document.getElementById("hexagonal");
+const Amanecer = document.getElementById("amanecer");
 
 
-while(prod != "8"){
-    switch (prod) {
-        case "1":
-            create(producto1);
-            break
-         case "2":
-            create(producto2);
-            break
-        case "3":
-            carrito.push(producto3);
-            break
-        case "8":
-            break;
-        default:
-            break;
-    }
-    prod = prompt('1)Kaidrá 2)Avavác 3)Polygono 4)Trigonikí Sfaíra 5)Strongyló 6)Trígono 7)Pyramída 8)Salir');
-    if (prod == "8"){
-        break
+
+const agregarCarrito = (e) => {
+    let click = e.target;
+    if(click == Bombones){
+        carrito.push(new Producto ("Bombones", 1, 230, "1"));
+        localStorage.setItem("Carrito", JSON.stringify(carrito))
+        console.log("Agregaste a tu carrito bombones")
+    }else if (click == Hexagonal) {
+        carrito.push(new Producto ("Hexagonal", 1, 400, "1"));
+        localStorage.setItem("Carrito", JSON.stringify(carrito))
+        console.log("Agregaste a tu carrito una vela Hexagonal")
+    }else if (click == Amanecer) {
+        carrito.push(new Producto ("Amanecer", 1, 400, "1"));
+        localStorage.setItem("Carrito", JSON.stringify(carrito))
+        console.log("Agregaste a tu carrito una vela Amanecer")
     }
 }
 
-const oferta = carrito.filter(producto => producto.precio < 600);
-
-let orden = carrito.sort(function(a, b){
-    if (a.precio < b.precio){
-        return -1;
-    } 
-    if (a.precio > b.precio){
-        return 1;
-    } 
-    if (a.precio = b.precio){
-        return 0;
-    } 
-});
-
-console.log(oferta);
-
-console.log(getAll());
+productosAgregar.forEach(productoAgregar => {   
+    productoAgregar.addEventListener("click", agregarCarrito) 
+})

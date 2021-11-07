@@ -18,7 +18,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Zen+Loop&display=swap" rel="stylesheet"> 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <script src="../JavaScipt/macetas.js"></script>
     <title>Macetas | Kairos Deco</title>
     <link rel="shortcut icon" href="../imagenes/Kairos Logo.png">
 </head>
@@ -48,6 +47,7 @@
                            <p class="divMacetas__descripcion">Una maceta con forma de corazón que llenará tus espacios de amor.</p>
                            <p>
                             <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Características</button>
+                            <button class="btn btn-primary btnId" id="kaidra">Agregar al carrito</button>
                           </p>
                           <div class="collapse" id="collapseExample">
                             <div class="card card-body">
@@ -76,6 +76,7 @@
                            <p class="divMacetas__descripcion">Su boca hexagonal y su similitud a una piña hará que tus días tengan un  aire tropical.</p>
                            <p>
                             <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAvavac" aria-expanded="false" aria-controls="collapseExample">Características</button>
+                            <button class="btn btn-primary btnId" id="avavac">Agregar al carrito</button>
                           </p>
                           <div class="collapse" id="collapseAvavac">
                             <div class="card card-body">
@@ -103,6 +104,7 @@
                            <p class="divMacetas__descripcion">La geometría de esta maceta logrará despertar tu mayor creatividad.</p>
                            <p>
                             <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePolygono" aria-expanded="false" aria-controls="collapseExample">Características</button>
+                            <button class="btn btn-primary btnId" id="polygono">Agregar al carrito</button>
                           </p>
                           <div class="collapse" id="collapsePolygono">
                             <div class="card card-body">
@@ -130,6 +132,7 @@
                            <p class="divMacetas__descripcion">Con su forma esférica y detalles triangulares llenará de elegancia cualquier lugar. </p>
                            <p>
                             <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTrigoniki" aria-expanded="false" aria-controls="collapseExample">Características</button>
+                            <button class="btn btn-primary btnId" id="trigoniki">Agregar al carrito</button>
                           </p>
                           <div class="collapse" id="collapseTrigoniki">
                             <div class="card card-body">
@@ -154,12 +157,12 @@
                         <img src="../macetas/poligono2.png" class="img-thumbnail" alt="maceta redonda" title="Strongyló polýgono">
                        <aside>
                            <h2 class="divMacetas__subtitle">Strongyló polýgono</h2>
-                           <p class="divMacetas__descripcion">Cinco caras, cinco perspectivas diferentes. <br>
-                             Si te sientes bloqueado/a solo basta con girarla y veras las cosas de otra manera. </p>
-                             <p>
-                                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseStrongylo" aria-expanded="false" aria-controls="collapseExample">Características</button>
-                              </p>
-                              <div class="collapse" id="collapseStrongylo">
+                           <p class="divMacetas__descripcion">Cinco caras, cinco perspectivas diferentes. <br>Si te sientes bloqueado/a solo basta con girarla y veras las cosas de otra manera. </p>
+                           <p>
+                            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseStrongylo" aria-expanded="false" aria-controls="collapseExample">Características</button>
+                            <button class="btn btn-primary btnId" id="strongylo">Agregar al carrito</button>
+                          </p>  
+                            <div class="collapse" id="collapseStrongylo">
                                 <div class="card card-body">
                                     <table class="table table-hover"> 
                                         <tr>
@@ -175,7 +178,7 @@
                                     </table>
                                 </div>
                                 <span class="divMacetas__precio">Precio: $450</span>
-                              </div>
+                            </div>
                        </aside>
                     </article>
                     <article class="col-md-4">
@@ -185,6 +188,7 @@
                            <p class="divMacetas__descripcion">De diseño clásico y equilibrado te regalará la armonía que estas buscando. </p>
                            <p>
                             <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTrigono" aria-expanded="false" aria-controls="collapseExample">Características</button>
+                            <button class="btn btn-primary btnId" id="trigono">Agregar al carrito</button>
                           </p>
                           <div class="collapse" id="collapseTrigono">
                             <div class="card card-body">
@@ -213,8 +217,9 @@
                             De seguro no te aburrirás de ella.</p>
                             <p>
                                 <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePyramida" aria-expanded="false" aria-controls="collapseExample">Características</button>
-                              </p>
-                              <div class="collapse" id="collapsePyramida">
+                                <button class="btn btn-primary btnId" id="pyramida">Agregar al carrito</button>
+                            </p>
+                            <div class="collapse" id="collapsePyramida">
                                 <div class="card card-body">
                                     <table class="table table-hover">
                                         <tr>
@@ -230,7 +235,7 @@
                                     </table>
                                 </div>
                                 <span class="divMacetas__precio">Precio: $450</span>
-                              </div>
+                            </div>
                        </aside>
                     </article>
                 </section>     
@@ -262,5 +267,6 @@
         </div>
     </footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+<script src="../JavaScipt/macetas.js"></script>
 </body>
 </html>
