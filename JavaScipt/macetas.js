@@ -1,79 +1,40 @@
-const carrito = [];
 
-const productos = []; 
+const botonAgregarCarrito = document.querySelectorAll('.btnId') 
 
-class Producto {
+botonAgregarCarrito.forEach(AddToCar =>{
+    AddToCar.addEventListener('click', addFunction)
+}) 
 
-    constructor (nombre, cantidad, precio, id){
-        this.nombre = nombre.toLowerCase()
-        this.cantidad = cantidad
-        this.precio = precio
-        this.id = id
-    }
+const ContenedorProducto = document.getElementsByClassName('.panel-carrito');
 
-    sumarIva (){
-        this.precio = this.precio * 1.21;
-    }
+function addFunction(event){
+    const button = event.target
+   
+    const producto = button.closest('.col-md-4');
+   
+    const tituloProducto = producto.querySelector('.divMacetas__subtitle').textContent;
 
+    const precioProducto = producto.querySelector('.divMacetas__precio').textContent;
+   
+    const imagenProducto = producto.querySelector('img').src;
+
+
+   agregarProducto(tituloProducto, precioProducto, imagenProducto); 
 }
 
-const create = (articulo) => {
-    carrito.push(articulo);
-     
-}
+function agregarProducto (tituloProducto, precioProducto, imagenProducto){
 
-for (const producto of carrito){
-    producto.sumarIva()
-}
-
-const getAll = () => {
-    return carrito;
-} 
-
-const productosAgregar = document.querySelectorAll(".btnId");
-
-const Kaidra = document.getElementById("kaidra");
-const Avavac = document.getElementById("avavac");
-const Polygono = document.getElementById("polygono");
-const Trigoniki = document.getElementById("trigoniki");
-const Strongylo = document.getElementById("strongylo");
-const Trigono = document.getElementById("trigono");
-const Pyramida = document.getElementById("pyramida");
-
-
-const agregarCarrito = (e) => {
-    let click = e.target;
-    if(click == Kaidra){
-        carrito.push(new Producto ("Kaidrá", 1, 600, "1")); 
-        localStorage.setItem("Carrito", JSON.stringify(carrito))
-        console.log("Agregaste a tu carrito la maceta Kaidrá")
-    }else if (click == Avavac) {
-        carrito.push(new Producto ("Avavác", 1, 500, "2"));
-        localStorage.setItem("Carrito", JSON.stringify(carrito))
-        console.log("Agregaste a tu carrito la maceta Avavác")
-    }else if (click == Polygono) {
-        carrito.push(new Producto ("Polygono", 1, 430, "3"));
-        localStorage.setItem("Carrito", JSON.stringify(carrito))
-        console.log("Agregaste a tu carrito la amceta Polygono")
-    }else if (click == Trigoniki) {
-        carrito.push(new Producto ("Trigonikí Sfaíra", 1, 470, "4"));
-        localStorage.setItem("Carrito", JSON.stringify(carrito))
-        console.log("Agregaste a tu carrito la maceta Trigonikí Sfaíra")
-    }else if (click == Strongylo) {
-        carrito.push(new Producto ("Strongyló Polýgono", 1, 450, "5"));
-        localStorage.setItem("Carrito", JSON.stringify(carrito))
-        console.log("Agregaste a tu carrito la amceta Strongyló Polýgono")
-    }else if (click == Trigono) {
-        carrito.push(new Producto ("Trígono", 1, 450, "6"));
-        localStorage.setItem("Carrito", JSON.stringify(carrito))
-        console.log("Agregaste a tu carrito la maceta Trígono")
-    }else if (click == Pyramida) {
-        carrito.push(new Producto ("Pyramída", 1, 450, "7"));
-        localStorage.setItem("Carrito", JSON.stringify(carrito))
-        console.log("Agregaste a tu carrito la maceta Pyramída")
-    }
-}
-
-productosAgregar.forEach(productoAgregar => {   
-    productoAgregar.addEventListener("click", agregarCarrito) 
-})
+    const carrito = document.createElement('div')
+    const carritoContenedor =`
+    <article class="col-md-4">
+        <img src="${imagenProducto}" class="img-thumbnail" alt="${tituloProducto}">
+        <aside>
+            <h2 class="divMacetas__subtitle">${tituloProducto}</h2>
+            <span class="divMacetas__precio">Precio: ${precioProducto}</span>
+        </aside>
+    </article>
+    `;
+    
+    carrito.innerHTML = carritoContenedor;
+    ContenedorProducto.append(carrito)
+}    

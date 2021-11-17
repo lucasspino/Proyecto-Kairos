@@ -34,7 +34,16 @@ html body {
         height: 5rem;
         
     }
+    button{
+       
+        background-color: transparent;
+        border: 0px;
+        font-size: 35px;
+        color: $tercer-color;
+        cursor: pointer;
+    }
     
+
     &__lista {
         list-style-type: none;
         display: flex;
@@ -82,7 +91,45 @@ html body {
                 }
             }
        }
+       
     }
+}
+
+.panel-carrito{
+    position:fixed;
+    z-index: 998;
+    background-color:#c4bcbb83 ;
+    width: 35%;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    transition: transform .3s ease;
+    transform: translate(100%, 0);
+
+    
+    button{
+        position: fixed;
+        z-index: 1000;
+        top: 3vh;
+        right: 1vw;
+        background: transparent;
+        border: transparent;
+        font-size: 35px;
+        color: $tercer-color;
+        cursor: pointer;
+        display: block;
+        
+    }
+     &-contenedor{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+         margin-top: 6vh;
+     }
+}
+.panel-carrito.activo{
+    transform: translate(0,0);
 }
 
 /* INDEX */
