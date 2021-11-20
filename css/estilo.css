@@ -76,13 +76,14 @@ html body {
 .panel-carrito {
   position: fixed;
   z-index: 998;
-  background-color: #c4bcbb83;
-  width: 35%;
+  background-color: #c4bcbbea;
+  width: 25%;
   top: 0;
   bottom: 0;
   right: 0;
   transition: transform .3s ease;
-  transform: translate(100%, 0); }
+  transform: translate(100%, 0);
+  padding: 2vh; }
   .panel-carrito button {
     position: fixed;
     z-index: 1000;
@@ -94,12 +95,23 @@ html body {
     color: #4B5035;
     cursor: pointer;
     display: block; }
-  .panel-carrito-contenedor {
+  .panel-carrito-contenedor .article-carrito {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     align-items: center;
-    margin-top: 6vh; }
+    margin: 1vh; }
+  .panel-carrito-contenedor .img-carrito {
+    width: 8vh;
+    background-color: transparent;
+    border: 1px solid #4B5035;
+    margin: 1vh;
+    flex-grow: 1; }
+  .panel-carrito-contenedor .aside-carrito h2 {
+    font-size: 3vh;
+    font-family: "Great Vibes", cursive; }
+  .panel-carrito-contenedor .aside-carrito span {
+    font-size: 2vh;
+    font-family: "Zen Loop", cursive;
+    color: #4B5035; }
 
 .panel-carrito.activo {
   transform: translate(0, 0); }

@@ -98,14 +98,14 @@ html body {
 .panel-carrito{
     position:fixed;
     z-index: 998;
-    background-color:#c4bcbb83 ;
-    width: 35%;
+    background-color:#c4bcbbea ;
+    width: 25%;
     top: 0;
     bottom: 0;
     right: 0;
     transition: transform .3s ease;
     transform: translate(100%, 0);
-
+    padding: 2vh;
     
     button{
         position: fixed;
@@ -121,12 +121,36 @@ html body {
         
     }
      &-contenedor{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-         margin-top: 6vh;
-     }
+        
+        .article-carrito{
+            display: flex;
+            align-items: center;
+            
+            margin: 1vh;
+            
+        }
+
+        .img-carrito{
+            width: 8vh;
+            background-color: transparent;
+            border: 1px solid $tercer-color;
+            margin: 1vh;
+            flex-grow: 1;
+        }
+
+        .aside-carrito{
+            h2{
+                font-size: 3vh;
+                font-family: $primer-fuente;
+            }
+            span{
+                font-size: 2vh;
+                font-family: $segunda-fuente;
+                color: $tercer-color;
+               
+            }
+        }
+    }
 }
 .panel-carrito.activo{
     transform: translate(0,0);

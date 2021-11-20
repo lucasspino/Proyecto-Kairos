@@ -5,7 +5,7 @@ botonAgregarCarrito.forEach(AddToCar =>{
     AddToCar.addEventListener('click', addFunction)
 }) 
 
-const ContenedorProducto = document.getElementsByClassName('.panel-carrito');
+const ContenedorProducto = document.querySelector('.panel-carrito');
 
 function addFunction(event){
     const button = event.target
@@ -24,17 +24,19 @@ function addFunction(event){
 
 function agregarProducto (tituloProducto, precioProducto, imagenProducto){
 
-    const carrito = document.createElement('div')
+    const carrito = document.createElement('div');
     const carritoContenedor =`
-    <article class="col-md-4">
-        <img src="${imagenProducto}" class="img-thumbnail" alt="${tituloProducto}">
-        <aside>
-            <h2 class="divMacetas__subtitle">${tituloProducto}</h2>
-            <span class="divMacetas__precio">Precio: ${precioProducto}</span>
-        </aside>
-    </article>
+    <div class="panel-carrito-contenedor">
+        <article class="col-md-4 article-carrito">
+            <img src="${imagenProducto}" class="img-thumbnail img-carrito" alt="${tituloProducto}">
+            <aside class= "aside-carrito">
+                <h2 class="divMacetas__subtitle">${tituloProducto}</h2>
+                <span class="divMacetas__precio">${precioProducto}</span>
+            </aside>
+        </article>
+    </div>    
     `;
     
     carrito.innerHTML = carritoContenedor;
-    ContenedorProducto.append(carrito)
+    ContenedorProducto.append(carrito);
 }    

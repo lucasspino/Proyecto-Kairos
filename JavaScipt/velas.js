@@ -1,60 +1,42 @@
-const carrito = [];
 
-const productos = []; 
+const botonAgregarCarrito = document.querySelectorAll('.btnId') 
 
-class Producto {
+botonAgregarCarrito.forEach(AddToCar =>{
+    AddToCar.addEventListener('click', addFunction)
+}) 
 
-    constructor (nombre, cantidad, precio, id){
-        this.nombre = nombre.toLowerCase()
-        this.cantidad = cantidad
-        this.precio = precio
-        this.id = id
-    }
+const ContenedorProducto = document.querySelector('.panel-carrito');
 
-    sumarIva (){
-        this.precio = this.precio * 1.21;
-    }
+function addFunction(event){
+    const button = event.target
+   
+    const producto = button.closest('.col-md-4');
+   
+    const tituloProducto = producto.querySelector('.divVelas__subtitle').textContent;
 
+    const precioProducto = producto.querySelector('.divVelas__precio').textContent;
+   
+    const imagenProducto = producto.querySelector('img').src;
+
+
+   agregarProducto(tituloProducto, precioProducto, imagenProducto); 
 }
 
-const create = (articulo) => {
-    carrito.push(articulo);
-     
-}
+function agregarProducto (tituloProducto, precioProducto, imagenProducto){
 
-for (const producto of carrito){
-    producto.sumarIva()
-}
-
-const getAll = () => {
-    return carrito;
-} 
-
-const productosAgregar = document.querySelectorAll(".btnId");
-
-const Bombones = document.getElementById("bombones");
-const Hexagonal = document.getElementById("hexagonal");
-const Amanecer = document.getElementById("amanecer");
-
-
-
-const agregarCarrito = (e) => {
-    let click = e.target;
-    if(click == Bombones){
-        carrito.push(new Producto ("Bombones", 1, 230, "1"));
-        localStorage.setItem("Carrito", JSON.stringify(carrito))
-        console.log("Agregaste a tu carrito bombones")
-    }else if (click == Hexagonal) {
-        carrito.push(new Producto ("Hexagonal", 1, 400, "1"));
-        localStorage.setItem("Carrito", JSON.stringify(carrito))
-        console.log("Agregaste a tu carrito una vela Hexagonal")
-    }else if (click == Amanecer) {
-        carrito.push(new Producto ("Amanecer", 1, 400, "1"));
-        localStorage.setItem("Carrito", JSON.stringify(carrito))
-        console.log("Agregaste a tu carrito una vela Amanecer")
-    }
-}
-
-productosAgregar.forEach(productoAgregar => {   
-    productoAgregar.addEventListener("click", agregarCarrito) 
-})
+    const carrito = document.createElement('div');
+    const carritoContenedor =`
+    <div class="panel-carrito-contenedor">
+        <article class="col-md-4 article-carrito">
+            <img src="${imagenProducto}" class="img-thumbnail img-carrito" alt="${tituloProducto}">
+            <aside class= "aside-carrito">
+                <h2 class="divMacetas__subtitle">${tituloProducto}</h2>
+                <span class="divMacetas__precio">${precioProducto}</span>
+            </aside>
+        </article>
+    </div>    
+    `;
+    
+    carrito.innerHTML = carritoContenedor;
+    ContenedorProducto.append(carrito);
+}    
