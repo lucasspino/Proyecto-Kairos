@@ -33,7 +33,14 @@
     </header>
     <aside class="panel-carrito">
         <button class="carrito-btn">X</button>
-        <div class="panel-carrito-contenedor"></div>
+        <div class="panel-carrito-contenedor">
+            
+        </div>
+        <div class="contenedor-precios">
+            <span class="TotalSpan">Total:</span>
+            <p class="Precio-Total">$0</p>
+            <button class="btnComprar">Comprar</button>
+        </div>
     </aside>
     <main>
         <div class="divVelas__sección--title"></div>
@@ -41,9 +48,9 @@
             <section class="row align-items-start">
                 <article class="col-md-4">
                     <img src="./amanecer.png" class="img-thumbnail" alt="Vela de soja" title="Amanecer">
-                    <aside>
-                        <h2 class="divVelas__subtitle">Amanecer</h2>
-                        <p class="divVelas__descripcion">Una experiencia increíble en aromática dispuesta en un recipiente clásico y elegante.</p>
+                    <aside class="producto">
+                        <h2 class="divMacetas__subtitle">Amanecer</h2>
+                        <p class="divMacetas__descripcion">Una experiencia increíble en aromática dispuesta en un recipiente clásico y elegante.</p>
                         <p>
                         <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAmanecer" aria-expanded="false" aria-controls="collapseExample">Características</button>
                         <button class="btn btn-primary btnId" id="amanecer">Agregar al carrito</button>
@@ -63,16 +70,17 @@
                             </tr>
                             </table>
                         </div>
-                        <span class="divVelas__precio">Precio: $500</span>
-                        </div>                                                   
-                                            
+                        <span class="divMacetas__precio">Precio:</span>
+                        <span class="div--Precio">$499.99</span>
+                        
+                        </div>                 
                     </aside>
                 </article>
                 <article class="col-md-4">
                     <img src="./hexagonal.png" class="img-thumbnail" alt="Vela de soja hexagonal" title="Hexagonal">
-                    <aside>
-                        <h2 class="divVelas__subtitle">Hexagonal</h2>
-                        <p class="divVelas__descripcion">Un modelo visualmente perfecto. Ayudará a decorar e inundar tu hogar de aromas excepcionales.</p>
+                    <aside class="">
+                        <h2 class="divMacetas__subtitle">Hexagonal</h2>
+                        <p class="divMacetas__descripcion">Un modelo visualmente perfecto. Ayudará a decorar e inundar tu hogar de aromas excepcionales.</p>
                         <p>
                         <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapsehexagonal" aria-expanded="false" aria-controls="collapseExample">Características</button>
                         <button class="btn btn-primary btnId" id="hexagonal">Agregar al carrito</button>
@@ -92,15 +100,17 @@
                             </tr>
                             </table>
                         </div>
-                        <span class="divVelas__precio">Precio: $450</span>
+                        <span class="divMacetas__precio">Precio:</span>
+                        <span class="div--Precio">$449.99</span>
+                        
                         </div>                               
                     </aside>
                 </article>
                 <article class="col-md-4">
                     <img src="./bombones.png" class="img-thumbnail" alt="Bombones aromaticos" title="Bombones">
-                    <aside>
-                        <h2 class="divVelas__subtitle">Bombones</h2>
-                        <p class="divVelas__descripcion">Aromas en bombones, utiliza tu hornito y perfuma momentos con Kairos Deco.</p>
+                    <aside class="">
+                        <h2 class="divMacetas__subtitle">Bombones</h2>
+                        <p class="divMacetas__descripcion">Aromas en bombones, utiliza tu hornito y perfuma momentos con Kairos Deco.</p>
                         <p>
                         <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseBombones" aria-expanded="false" aria-controls="collapseExample">Características</button>
                         <button class="btn btn-primary btnId" id="bombones">Agregar al carrito</button>
@@ -120,7 +130,9 @@
                             </tr>
                             </table>
                         </div>
-                        <span class="divVelas__precio">Precio: $230</span>
+                        <span class="divMacetas__precio">Precio:</span>
+                        <span class="div--Precio">$400</span>
+                        
                         </div>
                     </aside>
                 </article>
@@ -152,8 +164,9 @@
             </div>
         </div>
     </footer> 
+    <script src="../JavaScipt/Carrito.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
     <script src="../JavaScipt/btnCarrito.js"></script>
-    <script src="../JavaScipt/velas.js"></script>
+    
 </body>
 </html>
