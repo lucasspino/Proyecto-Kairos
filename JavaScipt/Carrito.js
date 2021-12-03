@@ -1,74 +1,135 @@
+const Clickbutton = document.querySelectorAll('.btnId')
+const panelContenedorCarrito = document.querySelector('.panel-carrito-contenedor')
+let carrito = []
 
-const botonAgregarCarrito = document.querySelectorAll('.btnId') 
+Clickbutton.forEach(btn => {
+  btn.addEventListener('click', agregarItemCarrito)
+})
 
-botonAgregarCarrito.forEach(AddToCar =>{
-    AddToCar.addEventListener('click', addFunction)
-}) 
 
-const ContenedorProducto = document.querySelector('.panel-carrito-contenedor');
 
-function addFunction(event){
-    const button = event.target
-    const producto = button.closest('.col-md-4');
+function agregarItemCarrito(e){
+  const button = e.target
+  const item = button.closest('.col-md-4')
+  const itemTitle = item.querySelector('.divMacetas__subtitle').textContent;
+  const itemPrice = item.querySelector('.div--Precio').textContent;
+  const itemImg = item.querySelector('.img-thumbnail').src;
+  
+  const newItem = {
+    title: itemTitle,
+    precio: itemPrice,
+    img: itemImg,
+    cantidad: 1
+  }
 
-    const tituloProducto = producto.querySelector('.divMacetas__subtitle').textContent;
-    const precioProducto = producto.querySelector('.div--Precio').textContent;
-    const imagenProducto = producto.querySelector('img').src;
-
-   agregarProducto(tituloProducto, precioProducto, imagenProducto); 
+  agregarCarrito(newItem)
 }
 
-function agregarProducto (tituloProducto, precioProducto, imagenProducto){
 
-    const carrito = document.createElement('div');
-    const carritoContenedor =`
-   
-        <article class="col-md-4 productoItem">
-           
-            <img src="${imagenProducto}" class="img-thumbnail img-carrito" alt="${tituloProducto}">
-            
-            <aside class= "aside-carrito">
-                <h2 class="divMacetas__subtitle">${tituloProducto}</h2>
-                <span class="precio-Producto">${precioProducto}</span>
-            </aside>
-            
+function agregarCarrito(newItem){
+
+  const alert = document.querySelector('.alert')
+
+  setTimeout( function(){
+    alert.classList.add('alert-primary')
+  }, 2000)
+    alert.classList.remove('alert-primary')
+
+  const InputElemnto = panelContenedorCarrito.getElementsByClassName('cantidadElement')
+  for(let i =0; i < carrito.length ; i++){
+    if(carrito[i].title.trim() === newItem.title.trim()){
+      carrito[i].cantidad ++;
+      const inputValue = InputElemnto[i]
+      inputValue.value++;
+      CarritoTotal()
+
+      return null;
+    }
+  }
+  
+  carrito.push(newItem)
+  
+  renderCarrito()
+} 
+
+
+function renderCarrito(){
+  panelContenedorCarrito.innerHTML = ''
+  carrito.map(item => {
+    const contenedorPanel = document.createElement('div')
+    contenedorPanel.classList.add('ItemCarrito')
+    const Content = `
+    
+    <article class="col-md-4 productoItem">
+            <img src="${item.img}" class="img-thumbnail img-carrito" alt="${item.title}">
+        <aside class= "aside-carrito">
+            <h2 class="divMacetas__subtitle">${item.title}</h2>
+            <span class="precio-Producto">${item.precio}</span>
+        </aside>
+        <div class="div-productos-el">        
             <p class="p-carrito">Cantidad</p>
-            <input class="cantidadElement" type="number" value="1">
+            <input class="cantidadElement" min="1" type="number" value=${item.cantidad}>
             <button class="botonBorrar" type="button">X</button>
+        </div>
+    </article>  
+    `
+    contenedorPanel.innerHTML = Content;
+    panelContenedorCarrito.append(contenedorPanel)
 
-        </article>
-      
-    `;
-    
-    carrito.innerHTML = carritoContenedor;
-    ContenedorProducto.append(carrito);
-
-    carrito.querySelector('.botonBorrar').addEventListener('click', borrarElemento);
-    
-    PrecioTotal()
-}    
-
-function PrecioTotal (){
-    let total = 0;
-    const totalCarrito = document.querySelector('.Precio-Total');
-    const productos = document.querySelectorAll('.productoItem');
-    
-    
-    productos.forEach(productos =>{
-        const productosPrecioEl = productos.querySelector('.precio-Producto');
-        const productosPrecio = Number(productosPrecioEl.textContent.replace('$', ''));
-        const cantElementCarrito = productos.querySelector('.cantidadElement');
-        const cantElement = Number(cantElementCarrito.value);
-        
-        total = total + productosPrecio * cantElement;
-        totalCarrito.innerHTML = `$${total.toFixed(2)}`;
-        console.log(total)
-    });
-    
+    contenedorPanel.querySelector(".botonBorrar").addEventListener('click', removeItemCarrito)
+    contenedorPanel.querySelector(".cantidadElement").addEventListener('change', sumaCantidad)
+  })
+  CarritoTotal()
 }
 
-function borrarElemento (e){
-    const btnBorrar = e.target;
-    btnBorrar.closest('.productoItem').remove();
-    PrecioTotal();
+function CarritoTotal(){
+  let Total = 0;
+  const itemCartTotal = document.querySelector('.Precio-Total')
+  carrito.forEach((item) => {
+    const precio = Number(item.precio.replace("$", ''))
+    Total = Total + precio*item.cantidad
+  })
+
+  itemCartTotal.innerHTML = `Total $${Total}`
+  addLocalStorage()
 }
+
+function removeItemCarrito(e){
+  const buttonDelete = e.target
+  const itemCarrito = buttonDelete.closest(".ItemCarrito")
+  const title = itemCarrito.querySelector('.divMacetas__subtitle').textContent;
+  for(let i=0; i<carrito.length ; i++){
+
+    if(carrito[i].title.trim() === title.trim()){
+      carrito.splice(i, 1)
+    }
+  }
+  itemCarrito.remove()
+  CarritoTotal()
+}
+
+function sumaCantidad(e){
+  const sumaInput  = e.target
+  const itemTitle = sumaInput.closest(".ItemCarrito")
+  const title = itemTitle.querySelector('.divMacetas__subtitle').textContent;
+  carrito.forEach(item => {
+    if(item.title.trim() === title){
+      sumaInput.value < 1 ?  (sumaInput.value = 1) : sumaInput.value;
+      item.cantidad = sumaInput.value;
+      CarritoTotal()
+    }
+  })
+}
+
+function addLocalStorage(){
+  localStorage.setItem('carrito', JSON.stringify(carrito))
+}
+
+window.onload = function(){
+  const storage = JSON.parse(localStorage.getItem('carrito'));
+  if(storage){
+    carrito = storage;
+    renderCarrito()
+  }
+}
+
